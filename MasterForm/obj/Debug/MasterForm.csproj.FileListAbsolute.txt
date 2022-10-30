@@ -1,0 +1,13 @@
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\bin\Debug\MasterForm.exe.config
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\bin\Debug\MasterForm.exe
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\bin\Debug\MasterForm.pdb
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.csproj.AssemblyReference.cache
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.Form1.resources
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.Properties.Resources.resources
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.csproj.GenerateResource.cache
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.csproj.CoreCompileInputs.cache
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.exe
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.pdb
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.UserControl1.resources
+C:\Users\trant\OneDrive\Documents\winForm\MasterForm\MasterForm\obj\Debug\MasterForm.UserControl2.resources
