@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MasterForm"
   ],
-  "SelectedNode": "\\C:\\Users\\trant\\OneDrive\\Documents\\winForm\\BanHang",
+  "SelectedNode": "\\MasterForm\\UserControl1.cs",
   "PreviewInSolutionExplorer": false
 }
