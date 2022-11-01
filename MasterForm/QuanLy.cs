@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MasterForm
 {
-    public partial class UserControl1 : UserControl
+    public partial class FormQuanLy : Form
     {
-        public UserControl1()
+        public FormQuanLy()
         {
             InitializeComponent();
         }

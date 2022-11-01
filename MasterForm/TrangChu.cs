@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MasterForm
 {
-    public partial class UserControl2 : UserControl
+    public partial class TrangChu : UserControl
     {
-        public UserControl2()
+        public TrangChu()
         {
             InitializeComponent();
         }
