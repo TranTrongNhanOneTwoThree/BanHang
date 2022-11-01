@@ -24,3 +24,17 @@ E:\C#\BaiTapLon\MasterForm\obj\Debug\MasterForm.pdb
 E:\C#\BaiTapLon\MasterForm\obj\Debug\MasterForm.FormQuanLy.resources
 E:\C#\BaiTapLon\MasterForm\obj\Debug\MasterForm.FormNhanVien.resources
 E:\C#\BaiTapLon\MasterForm\obj\Debug\MasterForm.TrangChu.resources
+E:\C#\BaiTapLonC#\MasterForm\bin\Debug\MasterForm.exe.config
+E:\C#\BaiTapLonC#\MasterForm\bin\Debug\MasterForm.exe
+E:\C#\BaiTapLonC#\MasterForm\bin\Debug\MasterForm.pdb
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.csproj.AssemblyReference.cache
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.csproj.SuggestedBindingRedirects.cache
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormNhanVien.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormQuanLy.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.Properties.Resources.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.TrangChu.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.csproj.GenerateResource.cache
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.csproj.CoreCompileInputs.cache
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.exe
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.pdb
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.HoaDon.resources

@@ -24,7 +24,12 @@ namespace MasterForm
 
         private void btn_TrangChu_Click(object sender, EventArgs e)
         {
+            trangChuNhanVien.BringToFront();    
+        }
 
+        private void btn_HoaDon_Click(object sender, EventArgs e)
+        {
+            hoaDonNhanVien.BringToFront();
         }
     }
 }

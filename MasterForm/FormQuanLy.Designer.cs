@@ -36,10 +36,12 @@
             this.btn_ListNV = new System.Windows.Forms.Button();
             this.btn_HoaDon = new System.Windows.Forms.Button();
             this.panelLabel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelShow = new System.Windows.Forms.Label();
+            this.labelTieuDe = new System.Windows.Forms.Label();
             this.panelShow = new System.Windows.Forms.Panel();
-            this.trangChu1 = new MasterForm.TrangChu();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.hoaDonQuanLy = new MasterForm.HoaDon();
+            this.trangChuQuanLy = new MasterForm.TrangChu();
             this.panelButton.SuspendLayout();
             this.panelLabel.SuspendLayout();
             this.panelShow.SuspendLayout();
@@ -57,7 +59,7 @@
             this.panelButton.Controls.Add(this.btn_HoaDon);
             this.panelButton.Location = new System.Drawing.Point(1, 196);
             this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(278, 468);
+            this.panelButton.Size = new System.Drawing.Size(278, 559);
             this.panelButton.TabIndex = 7;
             // 
             // btn_TrangChu
@@ -66,13 +68,14 @@
             this.btn_TrangChu.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btn_TrangChu.Image = global::MasterForm.Properties.Resources.Home;
             this.btn_TrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_TrangChu.Location = new System.Drawing.Point(-3, 5);
+            this.btn_TrangChu.Location = new System.Drawing.Point(-3, 9);
             this.btn_TrangChu.Name = "btn_TrangChu";
             this.btn_TrangChu.Size = new System.Drawing.Size(281, 70);
             this.btn_TrangChu.TabIndex = 10;
             this.btn_TrangChu.Text = "Trang Chủ";
             this.btn_TrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_TrangChu.UseVisualStyleBackColor = false;
+            this.btn_TrangChu.Click += new System.EventHandler(this.btn_TrangChu_Click);
             // 
             // btn_NhapHang
             // 
@@ -80,7 +83,7 @@
             this.btn_NhapHang.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btn_NhapHang.Image = global::MasterForm.Properties.Resources.Nhập_Hàng;
             this.btn_NhapHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_NhapHang.Location = new System.Drawing.Point(-4, 309);
+            this.btn_NhapHang.Location = new System.Drawing.Point(-1, 313);
             this.btn_NhapHang.Name = "btn_NhapHang";
             this.btn_NhapHang.Size = new System.Drawing.Size(281, 70);
             this.btn_NhapHang.TabIndex = 9;
@@ -94,7 +97,7 @@
             this.btn_Thoat.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btn_Thoat.Image = global::MasterForm.Properties.Resources.Thoát;
             this.btn_Thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Thoat.Location = new System.Drawing.Point(-3, 385);
+            this.btn_Thoat.Location = new System.Drawing.Point(-2, 486);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(281, 70);
             this.btn_Thoat.TabIndex = 8;
@@ -109,7 +112,7 @@
             this.btn_SanPham.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btn_SanPham.Image = global::MasterForm.Properties.Resources.Sản_Phẩm;
             this.btn_SanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_SanPham.Location = new System.Drawing.Point(-4, 157);
+            this.btn_SanPham.Location = new System.Drawing.Point(-3, 161);
             this.btn_SanPham.Name = "btn_SanPham";
             this.btn_SanPham.Size = new System.Drawing.Size(281, 70);
             this.btn_SanPham.TabIndex = 7;
@@ -123,7 +126,7 @@
             this.btn_ListNV.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btn_ListNV.Image = global::MasterForm.Properties.Resources.Nhân_Viên;
             this.btn_ListNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ListNV.Location = new System.Drawing.Point(-4, 233);
+            this.btn_ListNV.Location = new System.Drawing.Point(-3, 237);
             this.btn_ListNV.Name = "btn_ListNV";
             this.btn_ListNV.Size = new System.Drawing.Size(281, 70);
             this.btn_ListNV.TabIndex = 5;
@@ -138,49 +141,57 @@
             this.btn_HoaDon.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btn_HoaDon.Image = global::MasterForm.Properties.Resources.Hóa_Đơn;
             this.btn_HoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_HoaDon.Location = new System.Drawing.Point(-2, 81);
+            this.btn_HoaDon.Location = new System.Drawing.Point(-3, 85);
             this.btn_HoaDon.Name = "btn_HoaDon";
             this.btn_HoaDon.Size = new System.Drawing.Size(281, 70);
             this.btn_HoaDon.TabIndex = 6;
             this.btn_HoaDon.Text = "Hóa Đơn";
             this.btn_HoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_HoaDon.UseVisualStyleBackColor = false;
+            this.btn_HoaDon.Click += new System.EventHandler(this.btn_HoaDon_Click);
             // 
             // panelLabel
             // 
-            this.panelLabel.Controls.Add(this.label1);
+            this.panelLabel.Controls.Add(this.labelShow);
+            this.panelLabel.Controls.Add(this.labelTieuDe);
             this.panelLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelLabel.Location = new System.Drawing.Point(286, 4);
             this.panelLabel.Name = "panelLabel";
-            this.panelLabel.Size = new System.Drawing.Size(905, 186);
+            this.panelLabel.Size = new System.Drawing.Size(999, 186);
             this.panelLabel.TabIndex = 6;
+            this.panelLabel.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLabel_Paint);
             // 
-            // label1
+            // labelShow
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(96, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(726, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Xin Chào Chủ Shop Cầu Lông VNB Sports";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelShow.AutoSize = true;
+            this.labelShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.labelShow.Location = new System.Drawing.Point(3, 135);
+            this.labelShow.Name = "labelShow";
+            this.labelShow.Size = new System.Drawing.Size(109, 39);
+            this.labelShow.TabIndex = 1;
+            this.labelShow.Text = "label1";
+            // 
+            // labelTieuDe
+            // 
+            this.labelTieuDe.AutoSize = true;
+            this.labelTieuDe.Font = new System.Drawing.Font("Microsoft YaHei", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelTieuDe.Location = new System.Drawing.Point(70, 69);
+            this.labelTieuDe.Name = "labelTieuDe";
+            this.labelTieuDe.Size = new System.Drawing.Size(726, 45);
+            this.labelTieuDe.TabIndex = 0;
+            this.labelTieuDe.Text = "Xin Chào Chủ Shop Cầu Lông VNB Sports";
+            this.labelTieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTieuDe.Click += new System.EventHandler(this.label1_Click);
             // 
             // panelShow
             // 
-            this.panelShow.Controls.Add(this.trangChu1);
+            this.panelShow.Controls.Add(this.trangChuQuanLy);
+            this.panelShow.Controls.Add(this.hoaDonQuanLy);
             this.panelShow.Location = new System.Drawing.Point(286, 201);
             this.panelShow.Name = "panelShow";
-            this.panelShow.Size = new System.Drawing.Size(905, 463);
+            this.panelShow.Size = new System.Drawing.Size(999, 554);
             this.panelShow.TabIndex = 10;
-            // 
-            // trangChu1
-            // 
-            this.trangChu1.Location = new System.Drawing.Point(-2, -5);
-            this.trangChu1.Name = "trangChu1";
-            this.trangChu1.Size = new System.Drawing.Size(904, 455);
-            this.trangChu1.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -192,12 +203,27 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // hoaDonQuanLy
+            // 
+            this.hoaDonQuanLy.Location = new System.Drawing.Point(-2, 0);
+            this.hoaDonQuanLy.Name = "hoaDonQuanLy";
+            this.hoaDonQuanLy.Size = new System.Drawing.Size(1001, 559);
+            this.hoaDonQuanLy.TabIndex = 1;
+            this.hoaDonQuanLy.Load += new System.EventHandler(this.hoaDonQuanLy_Load);
+            // 
+            // trangChuQuanLy
+            // 
+            this.trangChuQuanLy.Location = new System.Drawing.Point(-2, 2);
+            this.trangChuQuanLy.Name = "trangChuQuanLy";
+            this.trangChuQuanLy.Size = new System.Drawing.Size(1000, 549);
+            this.trangChuQuanLy.TabIndex = 2;
+            // 
             // FormQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1196, 665);
+            this.ClientSize = new System.Drawing.Size(1292, 786);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelShow);
             this.Controls.Add(this.panelButton);
@@ -220,12 +246,14 @@
         private System.Windows.Forms.Button btn_HoaDon;
         private System.Windows.Forms.Button btn_ListNV;
         private System.Windows.Forms.Panel panelLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTieuDe;
         private System.Windows.Forms.Button btn_NhapHang;
         private System.Windows.Forms.Button btn_Thoat;
         private System.Windows.Forms.Button btn_TrangChu;
         private System.Windows.Forms.Panel panelShow;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private TrangChu trangChu1;
+        private System.Windows.Forms.Label labelShow;
+        private HoaDon hoaDonQuanLy;
+        private TrangChu trangChuQuanLy;
     }
 }
