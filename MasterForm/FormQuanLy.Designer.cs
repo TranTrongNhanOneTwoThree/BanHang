@@ -31,7 +31,6 @@
             this.panelLabel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelButton = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.button_QuanLy = new System.Windows.Forms.Button();
             this.button_ThongKe = new System.Windows.Forms.Button();
             this.button_DangXuat = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@
             this.button_DonHang = new System.Windows.Forms.Button();
             this.button_TrangChu = new System.Windows.Forms.Button();
             this.pictureBox_Logo = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelLabel.SuspendLayout();
             this.panelButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
@@ -89,14 +89,6 @@
             this.panelButton.Size = new System.Drawing.Size(195, 741);
             this.panelButton.TabIndex = 2;
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(195, 77);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1023, 664);
-            this.panel1.TabIndex = 4;
-            // 
             // button_QuanLy
             // 
             this.button_QuanLy.BackColor = System.Drawing.Color.DodgerBlue;
@@ -104,6 +96,7 @@
             this.button_QuanLy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_QuanLy.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_QuanLy.ForeColor = System.Drawing.Color.White;
+            this.button_QuanLy.Image = global::MasterForm.Properties.Resources.Quản_Lý;
             this.button_QuanLy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_QuanLy.Location = new System.Drawing.Point(3, 509);
             this.button_QuanLy.Name = "button_QuanLy";
@@ -119,6 +112,7 @@
             this.button_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_ThongKe.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ThongKe.ForeColor = System.Drawing.Color.White;
+            this.button_ThongKe.Image = global::MasterForm.Properties.Resources.Thống_kê;
             this.button_ThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_ThongKe.Location = new System.Drawing.Point(3, 455);
             this.button_ThongKe.Name = "button_ThongKe";
@@ -134,6 +128,7 @@
             this.button_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_DangXuat.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_DangXuat.ForeColor = System.Drawing.Color.White;
+            this.button_DangXuat.Image = global::MasterForm.Properties.Resources.Thoát;
             this.button_DangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_DangXuat.Location = new System.Drawing.Point(1, 681);
             this.button_DangXuat.Name = "button_DangXuat";
@@ -149,6 +144,7 @@
             this.button_CaiDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_CaiDat.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_CaiDat.ForeColor = System.Drawing.Color.White;
+            this.button_CaiDat.Image = global::MasterForm.Properties.Resources.Cài_đặt;
             this.button_CaiDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_CaiDat.Location = new System.Drawing.Point(3, 562);
             this.button_CaiDat.Name = "button_CaiDat";
@@ -164,6 +160,7 @@
             this.button_NhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_NhapHang.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_NhapHang.ForeColor = System.Drawing.Color.White;
+            this.button_NhapHang.Image = global::MasterForm.Properties.Resources.Nhập_hàng;
             this.button_NhapHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_NhapHang.Location = new System.Drawing.Point(3, 402);
             this.button_NhapHang.Name = "button_NhapHang";
@@ -179,6 +176,7 @@
             this.button_KhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_KhachHang.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_KhachHang.ForeColor = System.Drawing.Color.White;
+            this.button_KhachHang.Image = global::MasterForm.Properties.Resources.Khách_hàng;
             this.button_KhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_KhachHang.Location = new System.Drawing.Point(3, 349);
             this.button_KhachHang.Name = "button_KhachHang";
@@ -194,6 +192,7 @@
             this.button_SanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_SanPham.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_SanPham.ForeColor = System.Drawing.Color.White;
+            this.button_SanPham.Image = global::MasterForm.Properties.Resources.Sản_Phẩm;
             this.button_SanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_SanPham.Location = new System.Drawing.Point(3, 294);
             this.button_SanPham.Name = "button_SanPham";
@@ -209,6 +208,7 @@
             this.button_DonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_DonHang.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_DonHang.ForeColor = System.Drawing.Color.White;
+            this.button_DonHang.Image = global::MasterForm.Properties.Resources.Đơn_hàng;
             this.button_DonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_DonHang.Location = new System.Drawing.Point(3, 239);
             this.button_DonHang.Name = "button_DonHang";
@@ -224,6 +224,7 @@
             this.button_TrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_TrangChu.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_TrangChu.ForeColor = System.Drawing.Color.White;
+            this.button_TrangChu.Image = global::MasterForm.Properties.Resources.Trang_Chủ;
             this.button_TrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_TrangChu.Location = new System.Drawing.Point(3, 185);
             this.button_TrangChu.Name = "button_TrangChu";
@@ -235,12 +236,21 @@
             // 
             // pictureBox_Logo
             // 
+            this.pictureBox_Logo.Image = global::MasterForm.Properties.Resources.Logo_Shop;
             this.pictureBox_Logo.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Logo.Name = "pictureBox_Logo";
             this.pictureBox_Logo.Size = new System.Drawing.Size(195, 114);
             this.pictureBox_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_Logo.TabIndex = 0;
             this.pictureBox_Logo.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(195, 77);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1023, 664);
+            this.panel1.TabIndex = 4;
             // 
             // FormQuanLy
             // 
