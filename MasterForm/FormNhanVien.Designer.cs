@@ -39,10 +39,17 @@
             this.button_DonHang = new System.Windows.Forms.Button();
             this.button_TrangChu = new System.Windows.Forms.Button();
             this.pictureBox_Logo = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelShow = new System.Windows.Forms.Panel();
+            this.trangChu1 = new MasterForm.TrangChu();
+            this.sanPham1 = new MasterForm.SanPham();
+            this.nhapHang1 = new MasterForm.NhapHang();
+            this.khachHang1 = new MasterForm.KhachHang();
+            this.donHang1 = new MasterForm.DonHang();
+            this.caiDat1 = new MasterForm.CaiDat();
             this.panelLabel.SuspendLayout();
             this.panelButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
+            this.panelShow.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLabel
@@ -116,6 +123,7 @@
             this.button_CaiDat.TabIndex = 6;
             this.button_CaiDat.Text = "CÀI ĐẶT";
             this.button_CaiDat.UseVisualStyleBackColor = false;
+            this.button_CaiDat.Click += new System.EventHandler(this.button_CaiDat_Click);
             // 
             // button_NhapHang
             // 
@@ -132,6 +140,7 @@
             this.button_NhapHang.TabIndex = 5;
             this.button_NhapHang.Text = "       NHẬP HÀNG";
             this.button_NhapHang.UseVisualStyleBackColor = false;
+            this.button_NhapHang.Click += new System.EventHandler(this.button_NhapHang_Click);
             // 
             // button_KhachHang
             // 
@@ -148,6 +157,7 @@
             this.button_KhachHang.TabIndex = 4;
             this.button_KhachHang.Text = "          KHÁCH HÀNG";
             this.button_KhachHang.UseVisualStyleBackColor = false;
+            this.button_KhachHang.Click += new System.EventHandler(this.button_KhachHang_Click);
             // 
             // button_SanPham
             // 
@@ -164,6 +174,7 @@
             this.button_SanPham.TabIndex = 3;
             this.button_SanPham.Text = "     SẢN PHẨM";
             this.button_SanPham.UseVisualStyleBackColor = false;
+            this.button_SanPham.Click += new System.EventHandler(this.button_SanPham_Click);
             // 
             // button_DonHang
             // 
@@ -180,6 +191,7 @@
             this.button_DonHang.TabIndex = 2;
             this.button_DonHang.Text = "       ĐƠN HÀNG";
             this.button_DonHang.UseVisualStyleBackColor = false;
+            this.button_DonHang.Click += new System.EventHandler(this.button_DonHang_Click);
             // 
             // button_TrangChu
             // 
@@ -196,6 +208,7 @@
             this.button_TrangChu.TabIndex = 1;
             this.button_TrangChu.Text = "         TRANG CHỦ";
             this.button_TrangChu.UseVisualStyleBackColor = false;
+            this.button_TrangChu.Click += new System.EventHandler(this.button_TrangChu_Click_1);
             // 
             // pictureBox_Logo
             // 
@@ -207,20 +220,74 @@
             this.pictureBox_Logo.TabIndex = 0;
             this.pictureBox_Logo.TabStop = false;
             // 
-            // panel1
+            // panelShow
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(195, 77);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1023, 664);
-            this.panel1.TabIndex = 6;
+            this.panelShow.Controls.Add(this.trangChu1);
+            this.panelShow.Controls.Add(this.sanPham1);
+            this.panelShow.Controls.Add(this.nhapHang1);
+            this.panelShow.Controls.Add(this.khachHang1);
+            this.panelShow.Controls.Add(this.donHang1);
+            this.panelShow.Controls.Add(this.caiDat1);
+            this.panelShow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelShow.Location = new System.Drawing.Point(195, 77);
+            this.panelShow.Name = "panelShow";
+            this.panelShow.Size = new System.Drawing.Size(1023, 664);
+            this.panelShow.TabIndex = 6;
+            // 
+            // trangChu1
+            // 
+            this.trangChu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.trangChu1.Location = new System.Drawing.Point(0, 0);
+            this.trangChu1.Name = "trangChu1";
+            this.trangChu1.Size = new System.Drawing.Size(1023, 664);
+            this.trangChu1.TabIndex = 5;
+            // 
+            // sanPham1
+            // 
+            this.sanPham1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sanPham1.Location = new System.Drawing.Point(0, 0);
+            this.sanPham1.Name = "sanPham1";
+            this.sanPham1.Size = new System.Drawing.Size(1023, 664);
+            this.sanPham1.TabIndex = 4;
+            // 
+            // nhapHang1
+            // 
+            this.nhapHang1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nhapHang1.Location = new System.Drawing.Point(0, 0);
+            this.nhapHang1.Name = "nhapHang1";
+            this.nhapHang1.Size = new System.Drawing.Size(1023, 664);
+            this.nhapHang1.TabIndex = 3;
+            // 
+            // khachHang1
+            // 
+            this.khachHang1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.khachHang1.Location = new System.Drawing.Point(0, 0);
+            this.khachHang1.Name = "khachHang1";
+            this.khachHang1.Size = new System.Drawing.Size(1023, 664);
+            this.khachHang1.TabIndex = 2;
+            // 
+            // donHang1
+            // 
+            this.donHang1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.donHang1.Location = new System.Drawing.Point(0, 0);
+            this.donHang1.Name = "donHang1";
+            this.donHang1.Size = new System.Drawing.Size(1023, 664);
+            this.donHang1.TabIndex = 1;
+            // 
+            // caiDat1
+            // 
+            this.caiDat1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.caiDat1.Location = new System.Drawing.Point(0, 0);
+            this.caiDat1.Name = "caiDat1";
+            this.caiDat1.Size = new System.Drawing.Size(1023, 664);
+            this.caiDat1.TabIndex = 0;
             // 
             // FormNhanVien
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(1218, 741);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelShow);
             this.Controls.Add(this.panelLabel);
             this.Controls.Add(this.panelButton);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -233,12 +300,12 @@
             this.panelLabel.PerformLayout();
             this.panelButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
+            this.panelShow.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private TrangChu trangChu1;
         private System.Windows.Forms.Panel panelLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelButton;
@@ -250,6 +317,12 @@
         private System.Windows.Forms.Button button_DonHang;
         private System.Windows.Forms.Button button_TrangChu;
         private System.Windows.Forms.PictureBox pictureBox_Logo;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelShow;
+        private TrangChu trangChu1;
+        private SanPham sanPham1;
+        private NhapHang nhapHang1;
+        private KhachHang khachHang1;
+        private DonHang donHang1;
+        private CaiDat caiDat1;
     }
 }

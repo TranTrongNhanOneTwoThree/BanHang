@@ -37,4 +37,9 @@ E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.csproj.GenerateResource.cache
 E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.csproj.CoreCompileInputs.cache
 E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.exe
 E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.pdb
-E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.HoaDon.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.DonHang.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.SanPham.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.KhachHang.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.CaiDat.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.NhapHang.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.QuanLyNhanVien.resources

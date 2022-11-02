@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace MasterForm
 {
-    public partial class HoaDon : UserControl
+    public partial class NhapHang : UserControl
     {
-        public HoaDon()
+        public NhapHang()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBoxHoaDon_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

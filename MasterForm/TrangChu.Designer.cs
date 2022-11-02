@@ -35,20 +35,19 @@
             // pictureTrangChu
             // 
             this.pictureTrangChu.Image = global::MasterForm.Properties.Resources.Ảnh_Nền;
-            this.pictureTrangChu.Location = new System.Drawing.Point(5, 4);
+            this.pictureTrangChu.Location = new System.Drawing.Point(8, 8);
             this.pictureTrangChu.Name = "pictureTrangChu";
-            this.pictureTrangChu.Size = new System.Drawing.Size(1026, 544);
+            this.pictureTrangChu.Size = new System.Drawing.Size(1023, 664);
             this.pictureTrangChu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureTrangChu.TabIndex = 0;
+            this.pictureTrangChu.TabIndex = 1;
             this.pictureTrangChu.TabStop = false;
             // 
             // TrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.pictureTrangChu);
             this.Name = "TrangChu";
-            this.Size = new System.Drawing.Size(1034, 566);
+            this.Size = new System.Drawing.Size(1023, 664);
             ((System.ComponentModel.ISupportInitialize)(this.pictureTrangChu)).EndInit();
             this.ResumeLayout(false);
 

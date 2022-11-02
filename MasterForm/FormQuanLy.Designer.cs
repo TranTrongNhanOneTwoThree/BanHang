@@ -41,10 +41,18 @@
             this.button_DonHang = new System.Windows.Forms.Button();
             this.button_TrangChu = new System.Windows.Forms.Button();
             this.pictureBox_Logo = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelShow = new System.Windows.Forms.Panel();
+            this.trangChu2 = new MasterForm.TrangChu();
+            this.sanPham2 = new MasterForm.SanPham();
+            this.quanLyNhanVien2 = new MasterForm.QuanLyNhanVien();
+            this.nhapHang2 = new MasterForm.NhapHang();
+            this.khachHang2 = new MasterForm.KhachHang();
+            this.donHang2 = new MasterForm.DonHang();
+            this.caiDat2 = new MasterForm.CaiDat();
             this.panelLabel.SuspendLayout();
             this.panelButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
+            this.panelShow.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLabel
@@ -104,6 +112,7 @@
             this.button_QuanLy.TabIndex = 9;
             this.button_QuanLy.Text = "QUẢN LÝ";
             this.button_QuanLy.UseVisualStyleBackColor = false;
+            this.button_QuanLy.Click += new System.EventHandler(this.button_QuanLy_Click);
             // 
             // button_ThongKe
             // 
@@ -120,6 +129,7 @@
             this.button_ThongKe.TabIndex = 8;
             this.button_ThongKe.Text = "    THỐNG KÊ";
             this.button_ThongKe.UseVisualStyleBackColor = false;
+            this.button_ThongKe.Click += new System.EventHandler(this.button_ThongKe_Click);
             // 
             // button_DangXuat
             // 
@@ -152,6 +162,7 @@
             this.button_CaiDat.TabIndex = 6;
             this.button_CaiDat.Text = "CÀI ĐẶT";
             this.button_CaiDat.UseVisualStyleBackColor = false;
+            this.button_CaiDat.Click += new System.EventHandler(this.button_CaiDat_Click);
             // 
             // button_NhapHang
             // 
@@ -168,6 +179,7 @@
             this.button_NhapHang.TabIndex = 5;
             this.button_NhapHang.Text = "       NHẬP HÀNG";
             this.button_NhapHang.UseVisualStyleBackColor = false;
+            this.button_NhapHang.Click += new System.EventHandler(this.button_NhapHang_Click);
             // 
             // button_KhachHang
             // 
@@ -184,6 +196,7 @@
             this.button_KhachHang.TabIndex = 4;
             this.button_KhachHang.Text = "          KHÁCH HÀNG";
             this.button_KhachHang.UseVisualStyleBackColor = false;
+            this.button_KhachHang.Click += new System.EventHandler(this.button_KhachHang_Click);
             // 
             // button_SanPham
             // 
@@ -200,6 +213,7 @@
             this.button_SanPham.TabIndex = 3;
             this.button_SanPham.Text = "     SẢN PHẨM";
             this.button_SanPham.UseVisualStyleBackColor = false;
+            this.button_SanPham.Click += new System.EventHandler(this.button_SanPham_Click);
             // 
             // button_DonHang
             // 
@@ -216,6 +230,7 @@
             this.button_DonHang.TabIndex = 2;
             this.button_DonHang.Text = "       ĐƠN HÀNG";
             this.button_DonHang.UseVisualStyleBackColor = false;
+            this.button_DonHang.Click += new System.EventHandler(this.button_DonHang_Click);
             // 
             // button_TrangChu
             // 
@@ -244,20 +259,83 @@
             this.pictureBox_Logo.TabIndex = 0;
             this.pictureBox_Logo.TabStop = false;
             // 
-            // panel1
+            // panelShow
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(195, 77);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1023, 664);
-            this.panel1.TabIndex = 4;
+            this.panelShow.Controls.Add(this.trangChu2);
+            this.panelShow.Controls.Add(this.sanPham2);
+            this.panelShow.Controls.Add(this.quanLyNhanVien2);
+            this.panelShow.Controls.Add(this.nhapHang2);
+            this.panelShow.Controls.Add(this.khachHang2);
+            this.panelShow.Controls.Add(this.donHang2);
+            this.panelShow.Controls.Add(this.caiDat2);
+            this.panelShow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelShow.Location = new System.Drawing.Point(195, 77);
+            this.panelShow.Name = "panelShow";
+            this.panelShow.Size = new System.Drawing.Size(1023, 664);
+            this.panelShow.TabIndex = 4;
+            // 
+            // trangChu2
+            // 
+            this.trangChu2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.trangChu2.Location = new System.Drawing.Point(0, 0);
+            this.trangChu2.Name = "trangChu2";
+            this.trangChu2.Size = new System.Drawing.Size(1023, 664);
+            this.trangChu2.TabIndex = 6;
+            // 
+            // sanPham2
+            // 
+            this.sanPham2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sanPham2.Location = new System.Drawing.Point(0, 0);
+            this.sanPham2.Name = "sanPham2";
+            this.sanPham2.Size = new System.Drawing.Size(1023, 664);
+            this.sanPham2.TabIndex = 5;
+            // 
+            // quanLyNhanVien2
+            // 
+            this.quanLyNhanVien2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.quanLyNhanVien2.Location = new System.Drawing.Point(0, 0);
+            this.quanLyNhanVien2.Name = "quanLyNhanVien2";
+            this.quanLyNhanVien2.Size = new System.Drawing.Size(1023, 664);
+            this.quanLyNhanVien2.TabIndex = 4;
+            // 
+            // nhapHang2
+            // 
+            this.nhapHang2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nhapHang2.Location = new System.Drawing.Point(0, 0);
+            this.nhapHang2.Name = "nhapHang2";
+            this.nhapHang2.Size = new System.Drawing.Size(1023, 664);
+            this.nhapHang2.TabIndex = 3;
+            // 
+            // khachHang2
+            // 
+            this.khachHang2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.khachHang2.Location = new System.Drawing.Point(0, 0);
+            this.khachHang2.Name = "khachHang2";
+            this.khachHang2.Size = new System.Drawing.Size(1023, 664);
+            this.khachHang2.TabIndex = 2;
+            // 
+            // donHang2
+            // 
+            this.donHang2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.donHang2.Location = new System.Drawing.Point(0, 0);
+            this.donHang2.Name = "donHang2";
+            this.donHang2.Size = new System.Drawing.Size(1023, 664);
+            this.donHang2.TabIndex = 1;
+            // 
+            // caiDat2
+            // 
+            this.caiDat2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.caiDat2.Location = new System.Drawing.Point(0, 0);
+            this.caiDat2.Name = "caiDat2";
+            this.caiDat2.Size = new System.Drawing.Size(1023, 664);
+            this.caiDat2.TabIndex = 0;
             // 
             // FormQuanLy
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(1218, 741);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelShow);
             this.Controls.Add(this.panelLabel);
             this.Controls.Add(this.panelButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -268,6 +346,7 @@
             this.panelLabel.PerformLayout();
             this.panelButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
+            this.panelShow.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -285,8 +364,15 @@
         private System.Windows.Forms.Button button_DonHang;
         private System.Windows.Forms.Button button_TrangChu;
         private System.Windows.Forms.PictureBox pictureBox_Logo;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelShow;
         private System.Windows.Forms.Button button_QuanLy;
         private System.Windows.Forms.Button button_ThongKe;
+        private TrangChu trangChu2;
+        private SanPham sanPham2;
+        private QuanLyNhanVien quanLyNhanVien2;
+        private NhapHang nhapHang2;
+        private KhachHang khachHang2;
+        private DonHang donHang2;
+        private CaiDat caiDat2;
     }
 }
