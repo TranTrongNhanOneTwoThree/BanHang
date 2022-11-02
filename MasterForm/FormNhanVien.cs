@@ -22,14 +22,19 @@ namespace MasterForm
 
         }
 
-        private void btn_TrangChu_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
-            trangChuNhanVien.BringToFront();    
+
         }
 
-        private void btn_HoaDon_Click(object sender, EventArgs e)
+        private void FormNhanVien_Load(object sender, EventArgs e)
         {
-            hoaDonNhanVien.BringToFront();
+
+        }
+
+        private void button_TrangChu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

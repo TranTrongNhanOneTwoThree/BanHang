@@ -108,28 +108,37 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hóa Đơn.png" />
+    <None Include="Resources\Logo Shop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh Nền.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Khách hàng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trang Chủ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đơn hàng.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sản Phẩm.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Nhân Viên.png" />
+    <None Include="Resources\Nhập hàng.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Nhập Hàng.png" />
+    <None Include="Resources\Cài đặt.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Thoát.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Home.png" />
+    <None Include="Resources\Thống kê.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Logo Shop.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ảnh Nền.png" />
+    <None Include="Resources\Quản Lý.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

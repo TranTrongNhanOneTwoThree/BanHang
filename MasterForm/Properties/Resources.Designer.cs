@@ -73,9 +73,9 @@ namespace MasterForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Hóa_Đơn {
+        internal static System.Drawing.Bitmap Cài_đặt {
             get {
-                object obj = ResourceManager.GetObject("Hóa Đơn", resourceCulture);
+                object obj = ResourceManager.GetObject("Cài đặt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,19 @@ namespace MasterForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Home {
+        internal static System.Drawing.Bitmap Đơn_hàng {
             get {
-                object obj = ResourceManager.GetObject("Home", resourceCulture);
+                object obj = ResourceManager.GetObject("Đơn hàng", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Khách_hàng {
+            get {
+                object obj = ResourceManager.GetObject("Khách hàng", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +113,9 @@ namespace MasterForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Nhân_Viên {
+        internal static System.Drawing.Bitmap Nhập_hàng {
             get {
-                object obj = ResourceManager.GetObject("Nhân Viên", resourceCulture);
+                object obj = ResourceManager.GetObject("Nhập hàng", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +123,9 @@ namespace MasterForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Nhập_Hàng {
+        internal static System.Drawing.Bitmap Quản_Lý {
             get {
-                object obj = ResourceManager.GetObject("Nhập Hàng", resourceCulture);
+                object obj = ResourceManager.GetObject("Quản Lý", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +146,26 @@ namespace MasterForm.Properties {
         internal static System.Drawing.Bitmap Thoát {
             get {
                 object obj = ResourceManager.GetObject("Thoát", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thống_kê {
+            get {
+                object obj = ResourceManager.GetObject("Thống kê", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trang_Chủ {
+            get {
+                object obj = ResourceManager.GetObject("Trang Chủ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
