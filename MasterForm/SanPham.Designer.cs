@@ -46,7 +46,7 @@
             // 
             // groupBox_SanPham
             // 
-            this.groupBox_SanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.groupBox_SanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.groupBox_SanPham.Controls.Add(this.groupBox_TimKiem);
             this.groupBox_SanPham.Controls.Add(this.textBox_TìmKiem);
             this.groupBox_SanPham.Controls.Add(this.button_Tao);
@@ -85,11 +85,15 @@
             // textBox_TìmKiem
             // 
             this.textBox_TìmKiem.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_TìmKiem.ForeColor = System.Drawing.Color.Black;
+            this.textBox_TìmKiem.ForeColor = System.Drawing.Color.Gray;
             this.textBox_TìmKiem.Location = new System.Drawing.Point(457, 90);
             this.textBox_TìmKiem.Name = "textBox_TìmKiem";
             this.textBox_TìmKiem.Size = new System.Drawing.Size(327, 38);
             this.textBox_TìmKiem.TabIndex = 1;
+            this.textBox_TìmKiem.Text = "Tìm Kiếm";
+            this.textBox_TìmKiem.TextChanged += new System.EventHandler(this.textBox_TìmKiem_TextChanged);
+            this.textBox_TìmKiem.Enter += new System.EventHandler(this.textBox_TìmKiem_Enter);
+            this.textBox_TìmKiem.Leave += new System.EventHandler(this.textBox_TìmKiem_Leave);
             // 
             // button_Tao
             // 
@@ -102,6 +106,7 @@
             this.button_Tao.TabIndex = 1;
             this.button_Tao.Text = "TẠO";
             this.button_Tao.UseVisualStyleBackColor = false;
+            this.button_Tao.Click += new System.EventHandler(this.button_Tao_Click);
             // 
             // groupBox_BoLoc
             // 

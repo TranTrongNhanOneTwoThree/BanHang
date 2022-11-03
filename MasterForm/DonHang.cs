@@ -56,5 +56,29 @@ namespace MasterForm
         {
 
         }
+
+        private void textBox_TìmKiem_Enter(object sender, EventArgs e)
+        {
+            if(textBox_TìmKiem.Text == "Tìm Kiếm")
+            {
+                textBox_TìmKiem.Text = "";
+                textBox_TìmKiem.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox_TìmKiem_Leave(object sender, EventArgs e)
+        {
+            if (textBox_TìmKiem.Text == "")
+            {
+                textBox_TìmKiem.Text = "Tìm Kiếm";
+                textBox_TìmKiem.ForeColor = Color.Gray;
+            }
+        }
+
+        private void button_Tao_Click(object sender, EventArgs e)
+        {
+            FormHoaDon frmHoaDon = new FormHoaDon();
+            frmHoaDon.ShowDialog();
+        }
     }
 }

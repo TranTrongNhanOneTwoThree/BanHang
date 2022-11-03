@@ -34,8 +34,9 @@
             // 
             // pictureTrangChu
             // 
+            this.pictureTrangChu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureTrangChu.Image = global::MasterForm.Properties.Resources.Ảnh_Nền;
-            this.pictureTrangChu.Location = new System.Drawing.Point(8, 8);
+            this.pictureTrangChu.Location = new System.Drawing.Point(0, 0);
             this.pictureTrangChu.Name = "pictureTrangChu";
             this.pictureTrangChu.Size = new System.Drawing.Size(1023, 664);
             this.pictureTrangChu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -45,6 +46,7 @@
             // TrangChu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.Controls.Add(this.pictureTrangChu);
             this.Name = "TrangChu";
             this.Size = new System.Drawing.Size(1023, 664);

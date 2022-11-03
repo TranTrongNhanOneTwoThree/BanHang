@@ -16,5 +16,11 @@ namespace MasterForm
         {
             InitializeComponent();
         }
+
+        private void button_Them_Click(object sender, EventArgs e)
+        {
+            FormQuanLyNhanVien frmQuanLyNhanVien = new FormQuanLyNhanVien();
+            frmQuanLyNhanVien.ShowDialog();
+        }
     }
 }

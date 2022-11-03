@@ -42,7 +42,7 @@
             // 
             // groupBox_QuanLyNhanVien
             // 
-            this.groupBox_QuanLyNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.groupBox_QuanLyNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.groupBox_QuanLyNhanVien.Controls.Add(this.button_Them);
             this.groupBox_QuanLyNhanVien.Controls.Add(this.groupBox_TimKiem);
             this.groupBox_QuanLyNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -66,6 +66,7 @@
             this.button_Them.TabIndex = 1;
             this.button_Them.Text = "THÊM";
             this.button_Them.UseVisualStyleBackColor = false;
+            this.button_Them.Click += new System.EventHandler(this.button_Them_Click);
             // 
             // groupBox_TimKiem
             // 

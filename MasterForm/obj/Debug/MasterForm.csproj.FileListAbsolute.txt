@@ -43,3 +43,8 @@ E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.KhachHang.resources
 E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.CaiDat.resources
 E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.NhapHang.resources
 E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.QuanLyNhanVien.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormHoaDon.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormSanPham.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormKhachHang.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormNhapHang.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormQuanLyNhanVien.resources

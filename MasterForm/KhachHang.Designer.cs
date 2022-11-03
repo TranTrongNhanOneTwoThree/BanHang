@@ -42,7 +42,7 @@
             // 
             // groupBox_KhachHang
             // 
-            this.groupBox_KhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.groupBox_KhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.groupBox_KhachHang.Controls.Add(this.button_Them);
             this.groupBox_KhachHang.Controls.Add(this.groupBox_TimKiem);
             this.groupBox_KhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -59,13 +59,14 @@
             // 
             this.button_Them.BackColor = System.Drawing.Color.DodgerBlue;
             this.button_Them.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Them.ForeColor = System.Drawing.Color.White;
+            this.button_Them.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button_Them.Location = new System.Drawing.Point(850, 90);
             this.button_Them.Name = "button_Them";
             this.button_Them.Size = new System.Drawing.Size(135, 38);
             this.button_Them.TabIndex = 1;
             this.button_Them.Text = "THÊM";
             this.button_Them.UseVisualStyleBackColor = false;
+            this.button_Them.Click += new System.EventHandler(this.button_Them_Click);
             // 
             // groupBox_TimKiem
             // 
@@ -83,11 +84,14 @@
             // textBox_TìmKiem
             // 
             this.textBox_TìmKiem.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_TìmKiem.ForeColor = System.Drawing.Color.Black;
+            this.textBox_TìmKiem.ForeColor = System.Drawing.Color.Gray;
             this.textBox_TìmKiem.Location = new System.Drawing.Point(206, 26);
             this.textBox_TìmKiem.Name = "textBox_TìmKiem";
             this.textBox_TìmKiem.Size = new System.Drawing.Size(327, 38);
             this.textBox_TìmKiem.TabIndex = 1;
+            this.textBox_TìmKiem.Text = "Tìm Kiếm";
+            this.textBox_TìmKiem.Enter += new System.EventHandler(this.textBox_TìmKiem_Enter);
+            this.textBox_TìmKiem.Leave += new System.EventHandler(this.textBox_TìmKiem_Leave);
             // 
             // comboBox_TimKiem
             // 
