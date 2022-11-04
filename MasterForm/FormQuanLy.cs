@@ -51,11 +51,6 @@ namespace MasterForm
             panelShow.Controls["CaiDat"].BringToFront();
         }
 
-        private void button_Exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void FormQuanLy_Load(object sender, EventArgs e)
         {
             // add các controll vào panelShow
@@ -87,6 +82,11 @@ namespace MasterForm
             QuanLyNhanVien ql = new QuanLyNhanVien();
             ql.Dock = DockStyle.Fill;
             panelShow.Controls.Add(ql);
+        }
+
+        private void label_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

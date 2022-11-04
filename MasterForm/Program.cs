@@ -16,7 +16,7 @@ namespace MasterForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormQuanLy());
+            Application.Run(new FormLogin());
         }
     }
 }

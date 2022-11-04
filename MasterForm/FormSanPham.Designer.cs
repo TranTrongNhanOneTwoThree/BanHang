@@ -44,6 +44,7 @@
             this.textBox_GiaSanPham = new System.Windows.Forms.TextBox();
             this.label_SanPhamMoi = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button_Exit = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.groupBox_SoLuong.SuspendLayout();
             this.groupBox_TenSanPham.SuspendLayout();
@@ -56,6 +57,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.panel2.Controls.Add(this.button_Exit);
             this.panel2.Controls.Add(this.textBox_ThongTinSanPham);
             this.panel2.Controls.Add(this.label_ThongTinSanPham);
             this.panel2.Controls.Add(this.groupBox_SoLuong);
@@ -65,9 +67,9 @@
             this.panel2.Controls.Add(this.groupBox_LoaiSanPham);
             this.panel2.Controls.Add(this.groupBox_GiaSanPham);
             this.panel2.Controls.Add(this.label_SanPhamMoi);
-            this.panel2.Location = new System.Drawing.Point(340, 12);
+            this.panel2.Location = new System.Drawing.Point(340, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(491, 590);
+            this.panel2.Size = new System.Drawing.Size(504, 613);
             this.panel2.TabIndex = 3;
             // 
             // textBox_ThongTinSanPham
@@ -230,11 +232,24 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(333, 591);
+            this.pictureBox1.Size = new System.Drawing.Size(333, 610);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // button_Exit
+            // 
+            this.button_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.button_Exit.ForeColor = System.Drawing.Color.Red;
+            this.button_Exit.Location = new System.Drawing.Point(467, 3);
+            this.button_Exit.Name = "button_Exit";
+            this.button_Exit.Size = new System.Drawing.Size(37, 34);
+            this.button_Exit.TabIndex = 8;
+            this.button_Exit.Text = "X";
+            this.button_Exit.UseVisualStyleBackColor = false;
+            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
             // 
             // FormSanPham
             // 
@@ -282,5 +297,6 @@
         private System.Windows.Forms.ComboBox comboBox_LoaiSanPham;
         private System.Windows.Forms.TextBox textBox_TenSanPham;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button_Exit;
     }
 }

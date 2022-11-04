@@ -33,11 +33,13 @@
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.button_Nhap = new System.Windows.Forms.Button();
             this.groupBox_TimKiem = new System.Windows.Forms.GroupBox();
-            this.comboBox_TimKiem = new System.Windows.Forms.ComboBox();
             this.textBox_TìmKiem = new System.Windows.Forms.TextBox();
+            this.comboBox_TimKiem = new System.Windows.Forms.ComboBox();
             this.groupBox_NhapHang = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox_TimKiem.SuspendLayout();
             this.groupBox_NhapHang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Nhap
@@ -66,15 +68,6 @@
             this.groupBox_TimKiem.TabStop = false;
             this.groupBox_TimKiem.Text = "Tìm Kiếm";
             // 
-            // comboBox_TimKiem
-            // 
-            this.comboBox_TimKiem.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_TimKiem.FormattingEnabled = true;
-            this.comboBox_TimKiem.Location = new System.Drawing.Point(6, 27);
-            this.comboBox_TimKiem.Name = "comboBox_TimKiem";
-            this.comboBox_TimKiem.Size = new System.Drawing.Size(167, 37);
-            this.comboBox_TimKiem.TabIndex = 0;
-            // 
             // textBox_TìmKiem
             // 
             this.textBox_TìmKiem.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,9 +78,19 @@
             this.textBox_TìmKiem.TabIndex = 1;
             this.textBox_TìmKiem.Text = "Tìm Kiếm";
             // 
+            // comboBox_TimKiem
+            // 
+            this.comboBox_TimKiem.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_TimKiem.FormattingEnabled = true;
+            this.comboBox_TimKiem.Location = new System.Drawing.Point(6, 27);
+            this.comboBox_TimKiem.Name = "comboBox_TimKiem";
+            this.comboBox_TimKiem.Size = new System.Drawing.Size(167, 37);
+            this.comboBox_TimKiem.TabIndex = 0;
+            // 
             // groupBox_NhapHang
             // 
             this.groupBox_NhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.groupBox_NhapHang.Controls.Add(this.dataGridView1);
             this.groupBox_NhapHang.Controls.Add(this.groupBox_TimKiem);
             this.groupBox_NhapHang.Controls.Add(this.button_Nhap);
             this.groupBox_NhapHang.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -100,6 +103,17 @@
             this.groupBox_NhapHang.TabStop = false;
             this.groupBox_NhapHang.Text = "NHẬP HÀNG";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(18, 155);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(986, 493);
+            this.dataGridView1.TabIndex = 4;
+            // 
             // NhapHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -109,6 +123,7 @@
             this.groupBox_TimKiem.ResumeLayout(false);
             this.groupBox_TimKiem.PerformLayout();
             this.groupBox_NhapHang.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,5 +138,6 @@
         private System.Windows.Forms.TextBox textBox_TìmKiem;
         private System.Windows.Forms.ComboBox comboBox_TimKiem;
         private System.Windows.Forms.GroupBox groupBox_NhapHang;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

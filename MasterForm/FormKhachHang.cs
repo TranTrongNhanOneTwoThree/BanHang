@@ -70,5 +70,10 @@ namespace MasterForm
                 textBox_DiaChi.ForeColor = Color.Black;
             }
         }
+
+        private void button_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

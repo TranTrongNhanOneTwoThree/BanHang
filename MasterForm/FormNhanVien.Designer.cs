@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.panelLabel = new System.Windows.Forms.Panel();
-            this.button_Exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panelButton = new System.Windows.Forms.Panel();
-            this.panelShow = new System.Windows.Forms.Panel();
             this.button_DangXuat = new System.Windows.Forms.Button();
             this.button_CaiDat = new System.Windows.Forms.Button();
             this.button_NhapHang = new System.Windows.Forms.Button();
@@ -41,6 +39,8 @@
             this.button_DonHang = new System.Windows.Forms.Button();
             this.button_TrangChu = new System.Windows.Forms.Button();
             this.pictureBox_Logo = new System.Windows.Forms.PictureBox();
+            this.panelShow = new System.Windows.Forms.Panel();
+            this.label_Exit = new System.Windows.Forms.Label();
             this.panelLabel.SuspendLayout();
             this.panelButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
@@ -49,7 +49,7 @@
             // panelLabel
             // 
             this.panelLabel.BackColor = System.Drawing.Color.White;
-            this.panelLabel.Controls.Add(this.button_Exit);
+            this.panelLabel.Controls.Add(this.label_Exit);
             this.panelLabel.Controls.Add(this.label1);
             this.panelLabel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -58,19 +58,6 @@
             this.panelLabel.Name = "panelLabel";
             this.panelLabel.Size = new System.Drawing.Size(1023, 77);
             this.panelLabel.TabIndex = 5;
-            // 
-            // button_Exit
-            // 
-            this.button_Exit.BackColor = System.Drawing.Color.White;
-            this.button_Exit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Exit.ForeColor = System.Drawing.Color.Red;
-            this.button_Exit.Location = new System.Drawing.Point(974, 0);
-            this.button_Exit.Name = "button_Exit";
-            this.button_Exit.Size = new System.Drawing.Size(49, 43);
-            this.button_Exit.TabIndex = 2;
-            this.button_Exit.Text = "X";
-            this.button_Exit.UseVisualStyleBackColor = false;
-            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
             // 
             // label1
             // 
@@ -99,15 +86,6 @@
             this.panelButton.Name = "panelButton";
             this.panelButton.Size = new System.Drawing.Size(195, 741);
             this.panelButton.TabIndex = 4;
-            // 
-            // panelShow
-            // 
-            this.panelShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
-            this.panelShow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelShow.Location = new System.Drawing.Point(195, 77);
-            this.panelShow.Name = "panelShow";
-            this.panelShow.Size = new System.Drawing.Size(1023, 664);
-            this.panelShow.TabIndex = 6;
             // 
             // button_DangXuat
             // 
@@ -237,6 +215,28 @@
             this.pictureBox_Logo.TabIndex = 0;
             this.pictureBox_Logo.TabStop = false;
             // 
+            // panelShow
+            // 
+            this.panelShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.panelShow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelShow.Location = new System.Drawing.Point(195, 77);
+            this.panelShow.Name = "panelShow";
+            this.panelShow.Size = new System.Drawing.Size(1023, 664);
+            this.panelShow.TabIndex = 6;
+            // 
+            // label_Exit
+            // 
+            this.label_Exit.AutoSize = true;
+            this.label_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.label_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label_Exit.ForeColor = System.Drawing.Color.Red;
+            this.label_Exit.Location = new System.Drawing.Point(992, 0);
+            this.label_Exit.Name = "label_Exit";
+            this.label_Exit.Size = new System.Drawing.Size(31, 29);
+            this.label_Exit.TabIndex = 8;
+            this.label_Exit.Text = "X";
+            this.label_Exit.Click += new System.EventHandler(this.label_Exit_Click);
+            // 
             // FormNhanVien
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -270,8 +270,8 @@
         private System.Windows.Forms.Button button_SanPham;
         private System.Windows.Forms.Button button_DonHang;
         private System.Windows.Forms.PictureBox pictureBox_Logo;
-        private System.Windows.Forms.Button button_Exit;
         private System.Windows.Forms.Panel panelShow;
         private System.Windows.Forms.Button button_TrangChu;
+        private System.Windows.Forms.Label label_Exit;
     }
 }

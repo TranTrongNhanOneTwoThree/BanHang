@@ -106,6 +106,12 @@
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhapHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhapHang.resx">
       <DependentUpon>NhapHang.cs</DependentUpon>
@@ -229,6 +238,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Quản Lý.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh login.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

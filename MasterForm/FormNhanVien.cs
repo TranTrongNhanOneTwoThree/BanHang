@@ -86,7 +86,7 @@ namespace MasterForm
             panelShow.Controls["CaiDat"].BringToFront();
         }
 
-        private void button_Exit_Click(object sender, EventArgs e)
+        private void label_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

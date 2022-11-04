@@ -38,31 +38,31 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBox_TenDangNhap = new System.Windows.Forms.TextBox();
             this.groupBox_CaiDat = new System.Windows.Forms.GroupBox();
-            this.groupBox_ThongTinCaNhan = new System.Windows.Forms.GroupBox();
-            this.button_CapNhatThongTin = new System.Windows.Forms.Button();
-            this.groupBox_Email = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox_DiaChi = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox_SoDienThoai = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox_NgaySinh = new System.Windows.Forms.TextBox();
-            this.groupBox_GioiTinh = new System.Windows.Forms.GroupBox();
-            this.textBox_GioiTinh = new System.Windows.Forms.TextBox();
             this.groupBox_HoTen = new System.Windows.Forms.GroupBox();
             this.textBox_HoTen = new System.Windows.Forms.TextBox();
+            this.groupBox_GioiTinh = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox_SoDienThoai = new System.Windows.Forms.TextBox();
+            this.groupBox_DiaChi = new System.Windows.Forms.GroupBox();
+            this.textBox_DiaChi = new System.Windows.Forms.TextBox();
+            this.groupBox_Email = new System.Windows.Forms.GroupBox();
+            this.textBox_Email = new System.Windows.Forms.TextBox();
+            this.button_CapNhatThongTin = new System.Windows.Forms.Button();
+            this.groupBox_ThongTinCaNhan = new System.Windows.Forms.GroupBox();
+            this.textBox_NgaySinh = new System.Windows.Forms.TextBox();
             this.groupBox_ThongTinTaiKhoan.SuspendLayout();
             this.groupBox_MatKhau.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox_CaiDat.SuspendLayout();
-            this.groupBox_ThongTinCaNhan.SuspendLayout();
-            this.groupBox_Email.SuspendLayout();
-            this.groupBox_DiaChi.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox_GioiTinh.SuspendLayout();
             this.groupBox_HoTen.SuspendLayout();
+            this.groupBox_GioiTinh.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox_DiaChi.SuspendLayout();
+            this.groupBox_Email.SuspendLayout();
+            this.groupBox_ThongTinCaNhan.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox_ThongTinTaiKhoan
@@ -147,6 +147,146 @@
             this.groupBox_CaiDat.TabStop = false;
             this.groupBox_CaiDat.Text = "CÀI ĐẶT";
             // 
+            // groupBox_HoTen
+            // 
+            this.groupBox_HoTen.Controls.Add(this.textBox_HoTen);
+            this.groupBox_HoTen.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_HoTen.ForeColor = System.Drawing.Color.Gray;
+            this.groupBox_HoTen.Location = new System.Drawing.Point(346, 37);
+            this.groupBox_HoTen.Name = "groupBox_HoTen";
+            this.groupBox_HoTen.Size = new System.Drawing.Size(303, 78);
+            this.groupBox_HoTen.TabIndex = 0;
+            this.groupBox_HoTen.TabStop = false;
+            this.groupBox_HoTen.Text = "Họ Tên";
+            // 
+            // textBox_HoTen
+            // 
+            this.textBox_HoTen.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_HoTen.ForeColor = System.Drawing.Color.Gray;
+            this.textBox_HoTen.Location = new System.Drawing.Point(6, 30);
+            this.textBox_HoTen.Name = "textBox_HoTen";
+            this.textBox_HoTen.Size = new System.Drawing.Size(291, 38);
+            this.textBox_HoTen.TabIndex = 0;
+            this.textBox_HoTen.Text = "Họ tên";
+            this.textBox_HoTen.Enter += new System.EventHandler(this.textBox_HoTen_Enter);
+            this.textBox_HoTen.Leave += new System.EventHandler(this.textBox_HoTen_Leave);
+            // 
+            // groupBox_GioiTinh
+            // 
+            this.groupBox_GioiTinh.Controls.Add(this.comboBox1);
+            this.groupBox_GioiTinh.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_GioiTinh.ForeColor = System.Drawing.Color.Gray;
+            this.groupBox_GioiTinh.Location = new System.Drawing.Point(672, 37);
+            this.groupBox_GioiTinh.Name = "groupBox_GioiTinh";
+            this.groupBox_GioiTinh.Size = new System.Drawing.Size(303, 78);
+            this.groupBox_GioiTinh.TabIndex = 1;
+            this.groupBox_GioiTinh.TabStop = false;
+            this.groupBox_GioiTinh.Text = "Giới Tính";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(291, 37);
+            this.comboBox1.TabIndex = 0;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBox_NgaySinh);
+            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.Gray;
+            this.groupBox3.Location = new System.Drawing.Point(346, 131);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(303, 78);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Ngày Sinh";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBox_SoDienThoai);
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Gray;
+            this.groupBox2.Location = new System.Drawing.Point(672, 131);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(303, 78);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Số Điện Thoại";
+            // 
+            // textBox_SoDienThoai
+            // 
+            this.textBox_SoDienThoai.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_SoDienThoai.ForeColor = System.Drawing.Color.Gray;
+            this.textBox_SoDienThoai.Location = new System.Drawing.Point(6, 30);
+            this.textBox_SoDienThoai.Name = "textBox_SoDienThoai";
+            this.textBox_SoDienThoai.Size = new System.Drawing.Size(291, 38);
+            this.textBox_SoDienThoai.TabIndex = 0;
+            this.textBox_SoDienThoai.Text = "Số điện thoại";
+            this.textBox_SoDienThoai.Enter += new System.EventHandler(this.textBox_SoDienThoai_Enter);
+            this.textBox_SoDienThoai.Leave += new System.EventHandler(this.textBox_SoDienThoai_Leave);
+            // 
+            // groupBox_DiaChi
+            // 
+            this.groupBox_DiaChi.Controls.Add(this.textBox_DiaChi);
+            this.groupBox_DiaChi.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_DiaChi.ForeColor = System.Drawing.Color.Gray;
+            this.groupBox_DiaChi.Location = new System.Drawing.Point(346, 224);
+            this.groupBox_DiaChi.Name = "groupBox_DiaChi";
+            this.groupBox_DiaChi.Size = new System.Drawing.Size(629, 84);
+            this.groupBox_DiaChi.TabIndex = 5;
+            this.groupBox_DiaChi.TabStop = false;
+            this.groupBox_DiaChi.Text = "Địa Chỉ";
+            // 
+            // textBox_DiaChi
+            // 
+            this.textBox_DiaChi.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_DiaChi.ForeColor = System.Drawing.Color.Gray;
+            this.textBox_DiaChi.Location = new System.Drawing.Point(6, 30);
+            this.textBox_DiaChi.Name = "textBox_DiaChi";
+            this.textBox_DiaChi.Size = new System.Drawing.Size(617, 38);
+            this.textBox_DiaChi.TabIndex = 0;
+            this.textBox_DiaChi.Text = "Địa chỉ";
+            this.textBox_DiaChi.Enter += new System.EventHandler(this.textBox_DiaChi_Enter);
+            this.textBox_DiaChi.Leave += new System.EventHandler(this.textBox_DiaChi_Leave);
+            // 
+            // groupBox_Email
+            // 
+            this.groupBox_Email.Controls.Add(this.textBox_Email);
+            this.groupBox_Email.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_Email.ForeColor = System.Drawing.Color.Gray;
+            this.groupBox_Email.Location = new System.Drawing.Point(346, 321);
+            this.groupBox_Email.Name = "groupBox_Email";
+            this.groupBox_Email.Size = new System.Drawing.Size(629, 84);
+            this.groupBox_Email.TabIndex = 6;
+            this.groupBox_Email.TabStop = false;
+            this.groupBox_Email.Text = "Email";
+            // 
+            // textBox_Email
+            // 
+            this.textBox_Email.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Email.ForeColor = System.Drawing.Color.Gray;
+            this.textBox_Email.Location = new System.Drawing.Point(6, 30);
+            this.textBox_Email.Name = "textBox_Email";
+            this.textBox_Email.Size = new System.Drawing.Size(617, 38);
+            this.textBox_Email.TabIndex = 0;
+            this.textBox_Email.Text = "Email";
+            this.textBox_Email.Enter += new System.EventHandler(this.textBox_Email_Enter);
+            this.textBox_Email.Leave += new System.EventHandler(this.textBox_Email_Leave);
+            // 
+            // button_CapNhatThongTin
+            // 
+            this.button_CapNhatThongTin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button_CapNhatThongTin.ForeColor = System.Drawing.Color.White;
+            this.button_CapNhatThongTin.Location = new System.Drawing.Point(346, 419);
+            this.button_CapNhatThongTin.Name = "button_CapNhatThongTin";
+            this.button_CapNhatThongTin.Size = new System.Drawing.Size(623, 57);
+            this.button_CapNhatThongTin.TabIndex = 1;
+            this.button_CapNhatThongTin.Text = "CẬP NHẬP THÔNG TIN";
+            this.button_CapNhatThongTin.UseVisualStyleBackColor = false;
+            // 
             // groupBox_ThongTinCaNhan
             // 
             this.groupBox_ThongTinCaNhan.Controls.Add(this.button_CapNhatThongTin);
@@ -165,89 +305,6 @@
             this.groupBox_ThongTinCaNhan.TabStop = false;
             this.groupBox_ThongTinCaNhan.Text = "Thông Tin Cá Nhân";
             // 
-            // button_CapNhatThongTin
-            // 
-            this.button_CapNhatThongTin.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button_CapNhatThongTin.ForeColor = System.Drawing.Color.White;
-            this.button_CapNhatThongTin.Location = new System.Drawing.Point(346, 419);
-            this.button_CapNhatThongTin.Name = "button_CapNhatThongTin";
-            this.button_CapNhatThongTin.Size = new System.Drawing.Size(623, 57);
-            this.button_CapNhatThongTin.TabIndex = 1;
-            this.button_CapNhatThongTin.Text = "CẬP NHẬP THÔNG TIN";
-            this.button_CapNhatThongTin.UseVisualStyleBackColor = false;
-            // 
-            // groupBox_Email
-            // 
-            this.groupBox_Email.Controls.Add(this.textBox1);
-            this.groupBox_Email.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_Email.ForeColor = System.Drawing.Color.Gray;
-            this.groupBox_Email.Location = new System.Drawing.Point(346, 321);
-            this.groupBox_Email.Name = "groupBox_Email";
-            this.groupBox_Email.Size = new System.Drawing.Size(629, 84);
-            this.groupBox_Email.TabIndex = 6;
-            this.groupBox_Email.TabStop = false;
-            this.groupBox_Email.Text = "Email";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(617, 38);
-            this.textBox1.TabIndex = 0;
-            // 
-            // groupBox_DiaChi
-            // 
-            this.groupBox_DiaChi.Controls.Add(this.textBox3);
-            this.groupBox_DiaChi.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_DiaChi.ForeColor = System.Drawing.Color.Gray;
-            this.groupBox_DiaChi.Location = new System.Drawing.Point(346, 224);
-            this.groupBox_DiaChi.Name = "groupBox_DiaChi";
-            this.groupBox_DiaChi.Size = new System.Drawing.Size(629, 84);
-            this.groupBox_DiaChi.TabIndex = 5;
-            this.groupBox_DiaChi.TabStop = false;
-            this.groupBox_DiaChi.Text = "Địa Chỉ";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(6, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(617, 38);
-            this.textBox3.TabIndex = 0;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textBox_SoDienThoai);
-            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Gray;
-            this.groupBox2.Location = new System.Drawing.Point(672, 131);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(303, 78);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Số Điện Thoại";
-            // 
-            // textBox_SoDienThoai
-            // 
-            this.textBox_SoDienThoai.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_SoDienThoai.Location = new System.Drawing.Point(6, 30);
-            this.textBox_SoDienThoai.Name = "textBox_SoDienThoai";
-            this.textBox_SoDienThoai.Size = new System.Drawing.Size(291, 38);
-            this.textBox_SoDienThoai.TabIndex = 0;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox_NgaySinh);
-            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.Gray;
-            this.groupBox3.Location = new System.Drawing.Point(346, 131);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(303, 78);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Ngày Sinh";
-            // 
             // textBox_NgaySinh
             // 
             this.textBox_NgaySinh.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -255,46 +312,6 @@
             this.textBox_NgaySinh.Name = "textBox_NgaySinh";
             this.textBox_NgaySinh.Size = new System.Drawing.Size(291, 38);
             this.textBox_NgaySinh.TabIndex = 0;
-            // 
-            // groupBox_GioiTinh
-            // 
-            this.groupBox_GioiTinh.Controls.Add(this.textBox_GioiTinh);
-            this.groupBox_GioiTinh.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_GioiTinh.ForeColor = System.Drawing.Color.Gray;
-            this.groupBox_GioiTinh.Location = new System.Drawing.Point(672, 37);
-            this.groupBox_GioiTinh.Name = "groupBox_GioiTinh";
-            this.groupBox_GioiTinh.Size = new System.Drawing.Size(303, 78);
-            this.groupBox_GioiTinh.TabIndex = 1;
-            this.groupBox_GioiTinh.TabStop = false;
-            this.groupBox_GioiTinh.Text = "Giới Tính";
-            // 
-            // textBox_GioiTinh
-            // 
-            this.textBox_GioiTinh.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_GioiTinh.Location = new System.Drawing.Point(6, 30);
-            this.textBox_GioiTinh.Name = "textBox_GioiTinh";
-            this.textBox_GioiTinh.Size = new System.Drawing.Size(291, 38);
-            this.textBox_GioiTinh.TabIndex = 0;
-            // 
-            // groupBox_HoTen
-            // 
-            this.groupBox_HoTen.Controls.Add(this.textBox_HoTen);
-            this.groupBox_HoTen.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_HoTen.ForeColor = System.Drawing.Color.Gray;
-            this.groupBox_HoTen.Location = new System.Drawing.Point(346, 37);
-            this.groupBox_HoTen.Name = "groupBox_HoTen";
-            this.groupBox_HoTen.Size = new System.Drawing.Size(303, 78);
-            this.groupBox_HoTen.TabIndex = 0;
-            this.groupBox_HoTen.TabStop = false;
-            this.groupBox_HoTen.Text = "Họ Tên";
-            // 
-            // textBox_HoTen
-            // 
-            this.textBox_HoTen.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_HoTen.Location = new System.Drawing.Point(6, 30);
-            this.textBox_HoTen.Name = "textBox_HoTen";
-            this.textBox_HoTen.Size = new System.Drawing.Size(291, 38);
-            this.textBox_HoTen.TabIndex = 0;
             // 
             // CaiDat
             // 
@@ -308,19 +325,18 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox_CaiDat.ResumeLayout(false);
-            this.groupBox_ThongTinCaNhan.ResumeLayout(false);
-            this.groupBox_Email.ResumeLayout(false);
-            this.groupBox_Email.PerformLayout();
-            this.groupBox_DiaChi.ResumeLayout(false);
-            this.groupBox_DiaChi.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox_GioiTinh.ResumeLayout(false);
-            this.groupBox_GioiTinh.PerformLayout();
             this.groupBox_HoTen.ResumeLayout(false);
             this.groupBox_HoTen.PerformLayout();
+            this.groupBox_GioiTinh.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox_DiaChi.ResumeLayout(false);
+            this.groupBox_DiaChi.PerformLayout();
+            this.groupBox_Email.ResumeLayout(false);
+            this.groupBox_Email.PerformLayout();
+            this.groupBox_ThongTinCaNhan.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -340,16 +356,16 @@
         private System.Windows.Forms.GroupBox groupBox_ThongTinCaNhan;
         private System.Windows.Forms.Button button_CapNhatThongTin;
         private System.Windows.Forms.GroupBox groupBox_Email;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Email;
         private System.Windows.Forms.GroupBox groupBox_DiaChi;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_DiaChi;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox_SoDienThoai;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox_NgaySinh;
         private System.Windows.Forms.GroupBox groupBox_GioiTinh;
-        private System.Windows.Forms.TextBox textBox_GioiTinh;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox_HoTen;
         private System.Windows.Forms.TextBox textBox_HoTen;
+        private System.Windows.Forms.TextBox textBox_NgaySinh;
     }
 }

@@ -54,6 +54,8 @@
             this.groupBox_MaNV = new System.Windows.Forms.GroupBox();
             this.textBox_MaNV = new System.Windows.Forms.TextBox();
             this.label_NhapHang = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button_Exit = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.groupBox_LoaiHang.SuspendLayout();
             this.groupBox_SoLuong.SuspendLayout();
@@ -63,6 +65,7 @@
             this.groupBox_MaPhieuNhap.SuspendLayout();
             this.groupBox_ThoiGian.SuspendLayout();
             this.groupBox_MaNV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox_LoaiHang
@@ -338,12 +341,38 @@
             this.label_NhapHang.TabIndex = 6;
             this.label_NhapHang.Text = "NHẬP HÀNG";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(14, 494);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(910, 270);
+            this.dataGridView1.TabIndex = 12;
+            // 
+            // button_Exit
+            // 
+            this.button_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.button_Exit.ForeColor = System.Drawing.Color.Red;
+            this.button_Exit.Location = new System.Drawing.Point(902, -1);
+            this.button_Exit.Name = "button_Exit";
+            this.button_Exit.Size = new System.Drawing.Size(37, 34);
+            this.button_Exit.TabIndex = 13;
+            this.button_Exit.Text = "X";
+            this.button_Exit.UseVisualStyleBackColor = false;
+            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
+            // 
             // FormNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(940, 826);
+            this.Controls.Add(this.button_Exit);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label_TienNhap);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -369,6 +398,7 @@
             this.groupBox_ThoiGian.PerformLayout();
             this.groupBox_MaNV.ResumeLayout(false);
             this.groupBox_MaNV.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,5 +431,7 @@
         private System.Windows.Forms.GroupBox groupBox_MaNV;
         private System.Windows.Forms.TextBox textBox_MaNV;
         private System.Windows.Forms.Label label_NhapHang;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button_Exit;
     }
 }

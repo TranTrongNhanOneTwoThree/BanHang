@@ -63,6 +63,16 @@ namespace MasterForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ảnh_login {
+            get {
+                object obj = ResourceManager.GetObject("Ảnh login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ảnh_Nền {
             get {
                 object obj = ResourceManager.GetObject("Ảnh Nền", resourceCulture);

@@ -46,6 +46,7 @@
             this.button_Xoa = new System.Windows.Forms.Button();
             this.button_Them = new System.Windows.Forms.Button();
             this.groupBox_LoaiHang = new System.Windows.Forms.GroupBox();
+            this.comboBox_LoaiHang = new System.Windows.Forms.ComboBox();
             this.groupBox_SoLuong = new System.Windows.Forms.GroupBox();
             this.textBox_SoLuong = new System.Windows.Forms.TextBox();
             this.groupBox_TenSP = new System.Windows.Forms.GroupBox();
@@ -55,7 +56,8 @@
             this.label_ChiTietHoaDon = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label_ThanhTien = new System.Windows.Forms.Label();
-            this.comboBox_LoaiHang = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button_Exit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox_SoHoaDon.SuspendLayout();
             this.groupBox_ThoiGian.SuspendLayout();
@@ -66,6 +68,7 @@
             this.groupBox_SoLuong.SuspendLayout();
             this.groupBox_TenSP.SuspendLayout();
             this.groupBox_DonGia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label_HoaDon
@@ -266,6 +269,15 @@
             this.groupBox_LoaiHang.TabStop = false;
             this.groupBox_LoaiHang.Text = "Loại Hàng";
             // 
+            // comboBox_LoaiHang
+            // 
+            this.comboBox_LoaiHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_LoaiHang.FormattingEnabled = true;
+            this.comboBox_LoaiHang.Location = new System.Drawing.Point(6, 32);
+            this.comboBox_LoaiHang.Name = "comboBox_LoaiHang";
+            this.comboBox_LoaiHang.Size = new System.Drawing.Size(175, 31);
+            this.comboBox_LoaiHang.TabIndex = 1;
+            // 
             // groupBox_SoLuong
             // 
             this.groupBox_SoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
@@ -357,14 +369,29 @@
             this.label_ThanhTien.TabIndex = 5;
             this.label_ThanhTien.Text = "THÀNH TIỀN";
             // 
-            // comboBox_LoaiHang
+            // dataGridView1
             // 
-            this.comboBox_LoaiHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_LoaiHang.FormattingEnabled = true;
-            this.comboBox_LoaiHang.Location = new System.Drawing.Point(6, 32);
-            this.comboBox_LoaiHang.Name = "comboBox_LoaiHang";
-            this.comboBox_LoaiHang.Size = new System.Drawing.Size(175, 31);
-            this.comboBox_LoaiHang.TabIndex = 1;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 492);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(911, 268);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // button_Exit
+            // 
+            this.button_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.button_Exit.ForeColor = System.Drawing.Color.Red;
+            this.button_Exit.Location = new System.Drawing.Point(904, 7);
+            this.button_Exit.Name = "button_Exit";
+            this.button_Exit.Size = new System.Drawing.Size(37, 34);
+            this.button_Exit.TabIndex = 7;
+            this.button_Exit.Text = "X";
+            this.button_Exit.UseVisualStyleBackColor = false;
+            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
             // 
             // FormHoaDon
             // 
@@ -372,6 +399,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(940, 826);
+            this.Controls.Add(this.button_Exit);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label_ThanhTien);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -397,6 +426,7 @@
             this.groupBox_TenSP.ResumeLayout(false);
             this.groupBox_DonGia.ResumeLayout(false);
             this.groupBox_DonGia.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,5 +461,7 @@
         private System.Windows.Forms.Button button_Them;
         private System.Windows.Forms.Label label_ThanhTien;
         private System.Windows.Forms.ComboBox comboBox_LoaiHang;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button_Exit;
     }
 }

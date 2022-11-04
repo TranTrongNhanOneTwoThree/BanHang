@@ -58,5 +58,10 @@ namespace MasterForm
             timer1.Start();
             label_NgayVaoLam.Text = DateTimeOffset.Now.ToString();
         }
+
+        private void button_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

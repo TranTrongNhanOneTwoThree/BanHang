@@ -39,6 +39,7 @@
             this.label_ThongTinKhachHang = new System.Windows.Forms.Label();
             this.groupBox_DiaChi = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button_Exit = new System.Windows.Forms.Button();
             this.groupBox_HoTen.SuspendLayout();
             this.groupBox_MaKhachHang.SuspendLayout();
             this.groupBox_SoDienThoai.SuspendLayout();
@@ -180,12 +181,26 @@
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             // 
+            // button_Exit
+            // 
+            this.button_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.button_Exit.ForeColor = System.Drawing.Color.Red;
+            this.button_Exit.Location = new System.Drawing.Point(495, 4);
+            this.button_Exit.Name = "button_Exit";
+            this.button_Exit.Size = new System.Drawing.Size(37, 34);
+            this.button_Exit.TabIndex = 26;
+            this.button_Exit.Text = "X";
+            this.button_Exit.UseVisualStyleBackColor = false;
+            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
+            // 
             // FormKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(535, 596);
+            this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label_ThongTinKhachHang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -219,5 +234,6 @@
         private System.Windows.Forms.Label label_ThongTinKhachHang;
         private System.Windows.Forms.GroupBox groupBox_DiaChi;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button_Exit;
     }
 }

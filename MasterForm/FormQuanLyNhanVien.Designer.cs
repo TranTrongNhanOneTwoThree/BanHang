@@ -42,6 +42,7 @@
             this.textBox_SoDienThoai = new System.Windows.Forms.TextBox();
             this.label_ThongTinKhachHang = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button_Exit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox_NgayVaoLam.SuspendLayout();
             this.groupBox_HoTen.SuspendLayout();
@@ -191,12 +192,26 @@
             this.label_ThongTinKhachHang.TabIndex = 28;
             this.label_ThongTinKhachHang.Text = "THÔNG TIN NHÂN VIÊN";
             // 
+            // button_Exit
+            // 
+            this.button_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.button_Exit.ForeColor = System.Drawing.Color.Red;
+            this.button_Exit.Location = new System.Drawing.Point(454, 0);
+            this.button_Exit.Name = "button_Exit";
+            this.button_Exit.Size = new System.Drawing.Size(37, 34);
+            this.button_Exit.TabIndex = 30;
+            this.button_Exit.Text = "X";
+            this.button_Exit.UseVisualStyleBackColor = false;
+            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
+            // 
             // FormQuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(490, 596);
+            this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label_ThongTinKhachHang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -232,5 +247,6 @@
         private System.Windows.Forms.TextBox textBox_SoDienThoai;
         private System.Windows.Forms.Label label_ThongTinKhachHang;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button_Exit;
     }
 }

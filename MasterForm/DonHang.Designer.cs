@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox_DonHang = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button_Tao = new System.Windows.Forms.Button();
             this.groupBox_TimKiem = new System.Windows.Forms.GroupBox();
             this.textBox_TìmKiem = new System.Windows.Forms.TextBox();
@@ -37,12 +38,14 @@
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox_DonHang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox_TimKiem.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox_DonHang
             // 
             this.groupBox_DonHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.groupBox_DonHang.Controls.Add(this.dataGridView1);
             this.groupBox_DonHang.Controls.Add(this.button_Tao);
             this.groupBox_DonHang.Controls.Add(this.groupBox_TimKiem);
             this.groupBox_DonHang.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -54,6 +57,17 @@
             this.groupBox_DonHang.TabIndex = 1;
             this.groupBox_DonHang.TabStop = false;
             this.groupBox_DonHang.Text = "ĐƠN HÀNG";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(18, 155);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(986, 493);
+            this.dataGridView1.TabIndex = 2;
             // 
             // button_Tao
             // 
@@ -109,6 +123,7 @@
             this.Name = "DonHang";
             this.Size = new System.Drawing.Size(1023, 664);
             this.groupBox_DonHang.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox_TimKiem.ResumeLayout(false);
             this.groupBox_TimKiem.PerformLayout();
             this.ResumeLayout(false);
@@ -125,5 +140,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.ComponentModel.BackgroundWorker backgroundWorker3;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

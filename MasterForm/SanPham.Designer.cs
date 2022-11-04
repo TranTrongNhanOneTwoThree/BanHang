@@ -39,14 +39,17 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox_SanPham.SuspendLayout();
             this.groupBox_TimKiem.SuspendLayout();
             this.groupBox_BoLoc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox_SanPham
             // 
             this.groupBox_SanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.groupBox_SanPham.Controls.Add(this.dataGridView1);
             this.groupBox_SanPham.Controls.Add(this.groupBox_TimKiem);
             this.groupBox_SanPham.Controls.Add(this.textBox_TìmKiem);
             this.groupBox_SanPham.Controls.Add(this.button_Tao);
@@ -129,6 +132,17 @@
             this.comboBox_BoLoc.Size = new System.Drawing.Size(167, 37);
             this.comboBox_BoLoc.TabIndex = 0;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(18, 155);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(986, 493);
+            this.dataGridView1.TabIndex = 4;
+            // 
             // SanPham
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -139,6 +153,7 @@
             this.groupBox_SanPham.PerformLayout();
             this.groupBox_TimKiem.ResumeLayout(false);
             this.groupBox_BoLoc.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -156,5 +171,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.ComponentModel.BackgroundWorker backgroundWorker4;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

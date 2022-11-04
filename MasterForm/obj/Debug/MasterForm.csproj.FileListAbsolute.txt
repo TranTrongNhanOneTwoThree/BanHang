@@ -48,3 +48,4 @@ E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormSanPham.resources
 E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormKhachHang.resources
 E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormNhapHang.resources
 E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormQuanLyNhanVien.resources
+E:\C#\BaiTapLonC#\MasterForm\obj\Debug\MasterForm.FormLogin.resources
