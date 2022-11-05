@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +36,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,29 +58,101 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CaiDat.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ChiTietDonHang.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
-    <Compile Include="CaiDat.Designer.cs">
-      <DependentUpon>CaiDat.cs</DependentUpon>
+    <Compile Include="ChiTietHoaDon.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMucHang.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
     <Compile Include="DonHang.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model2.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NhaCungCap.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SanPham.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ChiTietDonHang_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ChiTietHoaDon_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_DonHang_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_HoaDon_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_KhachHang_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_NhaCungCap_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_NhanVien_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_SanPham_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sq_DanhMucHang_Result.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UC_CaiDat.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DonHang.Designer.cs">
-      <DependentUpon>DonHang.cs</DependentUpon>
+    <Compile Include="UC_CaiDat.Designer.cs">
+      <DependentUpon>UC_CaiDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DonHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DonHang.Designer.cs">
+      <DependentUpon>UC_DonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FormKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormKhachHang.Designer.cs">
       <DependentUpon>FormKhachHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormNhanVien.Designer.cs">
-      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="FormNhapHang.cs">
       <SubType>Form</SubType>
@@ -100,11 +184,11 @@
     <Compile Include="FormSanPham.Designer.cs">
       <DependentUpon>FormSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhachHang.cs">
+    <Compile Include="UC_KhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="KhachHang.Designer.cs">
-      <DependentUpon>KhachHang.cs</DependentUpon>
+    <Compile Include="UC_KhachHang.Designer.cs">
+      <DependentUpon>UC_KhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -112,11 +196,11 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhapHang.cs">
+    <Compile Include="UC_NhapHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NhapHang.Designer.cs">
-      <DependentUpon>NhapHang.cs</DependentUpon>
+    <Compile Include="UC_NhapHang.Designer.cs">
+      <DependentUpon>UC_NhapHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,35 +209,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyNhanVien.cs">
+    <Compile Include="UC_QuanLyNhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="QuanLyNhanVien.Designer.cs">
-      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    <Compile Include="UC_QuanLyNhanVien.Designer.cs">
+      <DependentUpon>UC_QuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="SanPham.cs">
+    <Compile Include="UC_SanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SanPham.Designer.cs">
-      <DependentUpon>SanPham.cs</DependentUpon>
+    <Compile Include="UC_SanPham.Designer.cs">
+      <DependentUpon>UC_SanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="TrangChu.cs">
+    <Compile Include="UC_TrangChu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TrangChu.Designer.cs">
-      <DependentUpon>TrangChu.cs</DependentUpon>
+    <Compile Include="UC_TrangChu.Designer.cs">
+      <DependentUpon>UC_TrangChu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CaiDat.resx">
-      <DependentUpon>CaiDat.cs</DependentUpon>
+    <EmbeddedResource Include="UC_CaiDat.resx">
+      <DependentUpon>UC_CaiDat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonHang.resx">
-      <DependentUpon>DonHang.cs</DependentUpon>
+    <EmbeddedResource Include="UC_DonHang.resx">
+      <DependentUpon>UC_DonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKhachHang.resx">
       <DependentUpon>FormKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormNhanVien.resx">
-      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNhapHang.resx">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
@@ -170,29 +251,37 @@
     <EmbeddedResource Include="FormSanPham.resx">
       <DependentUpon>FormSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhachHang.resx">
-      <DependentUpon>KhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="UC_KhachHang.resx">
+      <DependentUpon>UC_KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhapHang.resx">
-      <DependentUpon>NhapHang.cs</DependentUpon>
+    <EmbeddedResource Include="UC_NhapHang.resx">
+      <DependentUpon>UC_NhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyNhanVien.resx">
-      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="UC_QuanLyNhanVien.resx">
+      <DependentUpon>UC_QuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SanPham.resx">
-      <DependentUpon>SanPham.cs</DependentUpon>
+    <EmbeddedResource Include="UC_SanPham.resx">
+      <DependentUpon>UC_SanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TrangChu.resx">
-      <DependentUpon>TrangChu.cs</DependentUpon>
+    <EmbeddedResource Include="UC_TrangChu.resx">
+      <DependentUpon>UC_TrangChu.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="Model2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model2.edmx.diagram">
+      <DependentUpon>Model2.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -242,5 +331,28 @@
   <ItemGroup>
     <None Include="Resources\Ảnh login.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model2.edmx</DependentUpon>
+      <LastGenOutput>Model2.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model2.edmx</DependentUpon>
+      <LastGenOutput>Model2.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>
