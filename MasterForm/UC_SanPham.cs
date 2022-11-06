@@ -67,25 +67,26 @@ namespace MasterForm
             dataGridView1.DataSource = SanPhams;
             foreach(string item in DanhMucs)
             {
-                comboBox_BoLoc.Items.Add(item);
+                comboBox_TimKiemDanhMuc.Items.Add(item);
             }
-           // comboBox_BoLoc.DataSource = new BindingSource(DanhMucs, null); 
-            comboBox_BoLoc.DisplayMember = "Value";
-            comboBox_BoLoc.ValueMember = "Key";
+            // comboBox_BoLoc.DataSource = new BindingSource(DanhMucs, null); 
+            comboBox_TimKiemDanhMuc.DisplayMember = "Value";
+            comboBox_TimKiemDanhMuc.ValueMember = "Key";
         }
         private void textBox_TìmKiem_TextChanged(object sender, EventArgs e)
         {
             List<SanPham> SanPhams2 = new List<SanPham>();
-            if (comboBox_BoLoc.SelectedItem != null && comboBox_TimKiem.SelectedItem != null)
+            if (comboBox_TimKiemDanhMuc.SelectedItem != null && comboBox_TimKiem.SelectedItem != null)
             {
-                string TenDm = comboBox_BoLoc.SelectedItem.ToString();
+                string TenDm = comboBox_TimKiemDanhMuc.SelectedItem.ToString();
                 string timkiemtheo = comboBox_TimKiem.SelectedItem.ToString();
                 string content = "%"+textBox_TìmKiem.Text.ToString()+"%";
 
                 // MessageBox.Show(TenDm);
                 string connectionString;
                 SqlConnection cnn;
-                connectionString = @"Data Source=(local); Initial Catalog=BanHang;integrated security=true";
+                connectionString = @"Data Source = LAPTOP-AAL40GA9\SQLEXPRESS ;Initial Catalog=BanHang;
+            User ID=sa; Password=demo123";
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
                 SqlCommand command;
@@ -114,10 +115,35 @@ namespace MasterForm
 
         }
 
-        private void button_Tao_Click(object sender, EventArgs e)
+
+        private void textBox_TìmKiem_Leave(object sender, EventArgs e)
+        {
+            if (textBox_TìmKiem.Text == "")
+            {
+                textBox_TìmKiem.Text = "Tìm Kiếm";
+                textBox_TìmKiem.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBox_TìmKiem_Enter(object sender, EventArgs e)
+        {
+            if (textBox_TìmKiem.Text == "Tìm Kiếm")
+            {
+                textBox_TìmKiem.Text = "";
+                textBox_TìmKiem.ForeColor = Color.Black;
+            }
+        }
+
+        private void button_Them_Click(object sender, EventArgs e)
         {
             FormSanPham frmSanPham = new FormSanPham();
             frmSanPham.ShowDialog();
+        }
+
+        private void button_Them_TextChanged(object sender, EventArgs e)
+        {
+
+
         }
     }
 }

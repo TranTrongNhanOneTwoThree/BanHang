@@ -22,7 +22,7 @@ namespace MasterForm
             if (textBox_TìmKiem.Text == "")
             {
                 textBox_TìmKiem.Text = "Tìm Kiếm";
-                textBox_TìmKiem.ForeColor = Color.Black;
+                textBox_TìmKiem.ForeColor = Color.Gray;
             }
         }
 

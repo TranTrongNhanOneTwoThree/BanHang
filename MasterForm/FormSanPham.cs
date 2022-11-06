@@ -71,7 +71,30 @@ namespace MasterForm
             }
         }
 
-        private void button_Exit_Click(object sender, EventArgs e)
+        private void textBox_ThongTinSanPham_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_ThongTinSanPham_Leave(object sender, EventArgs e)
+        {
+            if (textBox_ThongTinSanPham.Text == "")
+            {
+                textBox_ThongTinSanPham.Text = "Thêm Thông Tin Sản Phẩm";
+                textBox_ThongTinSanPham.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBox_ThongTinSanPham_Enter(object sender, EventArgs e)
+        {
+            if (textBox_ThongTinSanPham.Text == "Thêm Thông Tin Sản Phẩm")
+            {
+                textBox_ThongTinSanPham.Text = "";
+                textBox_ThongTinSanPham.ForeColor = Color.Black;
+            }
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -164,7 +164,7 @@
             this.btn_DangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_DangXuat.IconSize = 44;
             this.btn_DangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_DangXuat.Location = new System.Drawing.Point(0, 684);
+            this.btn_DangXuat.Location = new System.Drawing.Point(0, 681);
             this.btn_DangXuat.Name = "btn_DangXuat";
             this.btn_DangXuat.Size = new System.Drawing.Size(195, 57);
             this.btn_DangXuat.TabIndex = 17;

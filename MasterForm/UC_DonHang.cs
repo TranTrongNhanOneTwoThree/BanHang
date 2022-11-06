@@ -80,5 +80,15 @@ namespace MasterForm
             FormHoaDon frmHoaDon = new FormHoaDon();
             frmHoaDon.ShowDialog();
         }
+
+        private void textBox_TìmKiem_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,116 +28,107 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.button_Nhap = new System.Windows.Forms.Button();
-            this.groupBox_TimKiem = new System.Windows.Forms.GroupBox();
-            this.textBox_TìmKiem = new System.Windows.Forms.TextBox();
             this.comboBox_TimKiem = new System.Windows.Forms.ComboBox();
-            this.groupBox_NhapHang = new System.Windows.Forms.GroupBox();
+            this.textBox_TìmKiem = new System.Windows.Forms.TextBox();
+            this.button_Nhap = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox_TimKiem.SuspendLayout();
-            this.groupBox_NhapHang.SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // comboBox_TimKiem
+            // 
+            this.comboBox_TimKiem.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_TimKiem.FormattingEnabled = true;
+            this.comboBox_TimKiem.Location = new System.Drawing.Point(21, 87);
+            this.comboBox_TimKiem.Name = "comboBox_TimKiem";
+            this.comboBox_TimKiem.Size = new System.Drawing.Size(226, 43);
+            this.comboBox_TimKiem.TabIndex = 11;
+            // 
+            // textBox_TìmKiem
+            // 
+            this.textBox_TìmKiem.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_TìmKiem.ForeColor = System.Drawing.Color.Gray;
+            this.textBox_TìmKiem.Location = new System.Drawing.Point(295, 87);
+            this.textBox_TìmKiem.Name = "textBox_TìmKiem";
+            this.textBox_TìmKiem.Size = new System.Drawing.Size(327, 41);
+            this.textBox_TìmKiem.TabIndex = 12;
+            this.textBox_TìmKiem.Text = "Tìm Kiếm";
+            this.textBox_TìmKiem.Enter += new System.EventHandler(this.textBox_TìmKiem_Enter);
+            this.textBox_TìmKiem.Leave += new System.EventHandler(this.textBox_TìmKiem_Leave);
             // 
             // button_Nhap
             // 
             this.button_Nhap.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button_Nhap.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Nhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Nhap.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Nhap.ForeColor = System.Drawing.Color.White;
-            this.button_Nhap.Location = new System.Drawing.Point(850, 90);
+            this.button_Nhap.Location = new System.Drawing.Point(885, 84);
             this.button_Nhap.Name = "button_Nhap";
-            this.button_Nhap.Size = new System.Drawing.Size(135, 38);
-            this.button_Nhap.TabIndex = 1;
-            this.button_Nhap.Text = "THÊM";
+            this.button_Nhap.Size = new System.Drawing.Size(135, 46);
+            this.button_Nhap.TabIndex = 13;
+            this.button_Nhap.Text = "NHẬP";
             this.button_Nhap.UseVisualStyleBackColor = false;
             this.button_Nhap.Click += new System.EventHandler(this.button_Nhap_Click);
-            // 
-            // groupBox_TimKiem
-            // 
-            this.groupBox_TimKiem.Controls.Add(this.textBox_TìmKiem);
-            this.groupBox_TimKiem.Controls.Add(this.comboBox_TimKiem);
-            this.groupBox_TimKiem.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_TimKiem.ForeColor = System.Drawing.Color.DimGray;
-            this.groupBox_TimKiem.Location = new System.Drawing.Point(12, 64);
-            this.groupBox_TimKiem.Name = "groupBox_TimKiem";
-            this.groupBox_TimKiem.Size = new System.Drawing.Size(555, 83);
-            this.groupBox_TimKiem.TabIndex = 2;
-            this.groupBox_TimKiem.TabStop = false;
-            this.groupBox_TimKiem.Text = "Tìm Kiếm";
-            // 
-            // textBox_TìmKiem
-            // 
-            this.textBox_TìmKiem.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_TìmKiem.ForeColor = System.Drawing.Color.Gray;
-            this.textBox_TìmKiem.Location = new System.Drawing.Point(206, 26);
-            this.textBox_TìmKiem.Name = "textBox_TìmKiem";
-            this.textBox_TìmKiem.Size = new System.Drawing.Size(327, 38);
-            this.textBox_TìmKiem.TabIndex = 1;
-            this.textBox_TìmKiem.Text = "Tìm Kiếm";
-            // 
-            // comboBox_TimKiem
-            // 
-            this.comboBox_TimKiem.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_TimKiem.FormattingEnabled = true;
-            this.comboBox_TimKiem.Location = new System.Drawing.Point(6, 27);
-            this.comboBox_TimKiem.Name = "comboBox_TimKiem";
-            this.comboBox_TimKiem.Size = new System.Drawing.Size(167, 37);
-            this.comboBox_TimKiem.TabIndex = 0;
-            // 
-            // groupBox_NhapHang
-            // 
-            this.groupBox_NhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
-            this.groupBox_NhapHang.Controls.Add(this.dataGridView1);
-            this.groupBox_NhapHang.Controls.Add(this.groupBox_TimKiem);
-            this.groupBox_NhapHang.Controls.Add(this.button_Nhap);
-            this.groupBox_NhapHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox_NhapHang.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_NhapHang.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox_NhapHang.Location = new System.Drawing.Point(0, 0);
-            this.groupBox_NhapHang.Name = "groupBox_NhapHang";
-            this.groupBox_NhapHang.Size = new System.Drawing.Size(1023, 664);
-            this.groupBox_NhapHang.TabIndex = 3;
-            this.groupBox_NhapHang.TabStop = false;
-            this.groupBox_NhapHang.Text = "NHẬP HÀNG";
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 155);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 162);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(986, 493);
-            this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.Size = new System.Drawing.Size(1017, 493);
+            this.dataGridView1.TabIndex = 14;
             // 
-            // NhapHang
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label2.Location = new System.Drawing.Point(13, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(228, 46);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "NHẬP HÀNG";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(17, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 23);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Tìm Kiếm Theo";
+            // 
+            // UC_NhapHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.groupBox_NhapHang);
-            this.Name = "NhapHang";
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox_TimKiem);
+            this.Controls.Add(this.textBox_TìmKiem);
+            this.Controls.Add(this.button_Nhap);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label2);
+            this.Name = "UC_NhapHang";
             this.Size = new System.Drawing.Size(1023, 664);
-            this.groupBox_TimKiem.ResumeLayout(false);
-            this.groupBox_TimKiem.PerformLayout();
-            this.groupBox_NhapHang.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker3;
-        private System.ComponentModel.BackgroundWorker backgroundWorker2;
-        private System.Windows.Forms.Button button_Nhap;
-        private System.Windows.Forms.GroupBox groupBox_TimKiem;
-        private System.Windows.Forms.TextBox textBox_TìmKiem;
         private System.Windows.Forms.ComboBox comboBox_TimKiem;
-        private System.Windows.Forms.GroupBox groupBox_NhapHang;
+        private System.Windows.Forms.TextBox textBox_TìmKiem;
+        private System.Windows.Forms.Button button_Nhap;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

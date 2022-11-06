@@ -40,7 +40,12 @@ namespace MasterForm
             }
         }
 
-        private void button_Exit_Click(object sender, EventArgs e)
+        private void textBox_SoLuong_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
