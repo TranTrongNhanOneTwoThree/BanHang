@@ -23,7 +23,7 @@ namespace MasterForm
         {
             String connectionstring;
             SqlConnection cnn;
-            connectionstring = @"data source=(local); initial catalog=banhang;integrated security=true";
+            connectionstring = @"data source=LAPTOP-75IRC5C7\SQLEXPRESS; initial catalog=BanHang;integrated security=true";
             cnn = new SqlConnection(connectionstring);
             cnn.Open();
             SqlCommand command;
@@ -84,7 +84,7 @@ namespace MasterForm
                 // MessageBox.Show(TenDm);
                 string connectionString;
                 SqlConnection cnn;
-                connectionString = @"Data Source=(local); Initial Catalog=BanHang;integrated security=true";
+                connectionString = @"Data Source=LAPTOP-75IRC5C7\SQLEXPRESS; Initial Catalog=BanHang;integrated security=true";
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
                 SqlCommand command;
@@ -117,6 +117,16 @@ namespace MasterForm
         {
             FormSanPham frmSanPham = new FormSanPham();
             frmSanPham.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void comboBox_BoLoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

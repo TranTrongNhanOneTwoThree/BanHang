@@ -11,23 +11,17 @@ namespace MasterForm
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class DonHang
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DonHang()
         {
-            this.ChiTietDonHangs = new HashSet<ChiTietDonHang>();
         }
     
         public int MaDh { get; set; }
         public Nullable<System.DateTime> NgayLap { get; set; }
         public Nullable<int> Manv { get; set; }
         public Nullable<int> MaNhaCungCap { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
-        public virtual NhaCungCap NhaCungCap { get; set; }
-        public virtual NhanVien NhanVien { get; set; }
+        
     }
 }
