@@ -19,16 +19,6 @@ namespace MasterForm
             InitializeComponent();
         }
 
-        private void groupBox_ThoiGian_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label_ThoiGian_Click_1(object sender, EventArgs e)
-        {
-            timer1.Start();
-            label_ThoiGian.Text = DateTimeOffset.Now.ToString();
-        }
 
         private void textBox_DonGia_Leave(object sender, EventArgs e)
         {
@@ -58,9 +48,14 @@ namespace MasterForm
             }
         }
 
-        private void button_Exit_Click(object sender, EventArgs e)
+        private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

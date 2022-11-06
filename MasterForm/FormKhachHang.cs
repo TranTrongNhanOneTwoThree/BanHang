@@ -71,7 +71,13 @@ namespace MasterForm
             }
         }
 
-        private void button_Exit_Click(object sender, EventArgs e)
+
+        private void label_ThongTinKhachHang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
