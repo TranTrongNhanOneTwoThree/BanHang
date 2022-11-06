@@ -335,7 +335,7 @@
             this.label_NhapHang.AutoSize = true;
             this.label_NhapHang.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_NhapHang.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label_NhapHang.Location = new System.Drawing.Point(403, 8);
+            this.label_NhapHang.Location = new System.Drawing.Point(374, 9);
             this.label_NhapHang.Name = "label_NhapHang";
             this.label_NhapHang.Size = new System.Drawing.Size(184, 34);
             this.label_NhapHang.TabIndex = 6;

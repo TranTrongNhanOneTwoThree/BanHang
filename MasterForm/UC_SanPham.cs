@@ -23,7 +23,8 @@ namespace MasterForm
         {
             String connectionstring;
             SqlConnection cnn;
-            connectionstring = @"data source=(local); initial catalog=banhang;integrated security=true";
+            connectionstring = @"Data Source = LAPTOP-AAL40GA9\SQLEXPRESS ;Initial Catalog=BanHang;
+            User ID=sa; Password=demo123";
             cnn = new SqlConnection(connectionstring);
             cnn.Open();
             SqlCommand command;
