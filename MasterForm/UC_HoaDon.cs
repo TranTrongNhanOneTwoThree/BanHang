@@ -10,17 +10,27 @@ using System.Windows.Forms;
 
 namespace MasterForm
 {
-    public partial class UC_NhapHang : UserControl
+    public partial class UC_HoaDon : UserControl
     {
-        public UC_NhapHang()
+        public UC_HoaDon()
         {
             InitializeComponent();
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UC_HoaDon_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_CTHD_Click(object sender, EventArgs e)
         {
-            FormNhapHang frmNhapHang = new FormNhapHang();
-            frmNhapHang.ShowDialog();
+            FormHoaDon frmHoaDon = new FormHoaDon();
+            frmHoaDon.ShowDialog();
         }
     }
 }

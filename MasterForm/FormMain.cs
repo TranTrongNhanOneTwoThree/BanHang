@@ -87,7 +87,7 @@ namespace MasterForm
         private void btn_DonHang_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new UC_DonHang());
+            panelShow.Controls.Add(new UC_HoaDon());
             ActivateButton(sender, RGBColors.color);
         }
 
@@ -121,13 +121,6 @@ namespace MasterForm
         {
             panelShow.Controls.Clear();
             panelShow.Controls.Add(new UC_QuanLyNhanVien());
-            ActivateButton(sender, RGBColors.color);
-        }
-
-        private void btn_CaiDat_Click(object sender, EventArgs e)
-        {
-            panelShow.Controls.Clear();
-            panelShow.Controls.Add(new UC_CaiDat());
             ActivateButton(sender, RGBColors.color);
         }
 

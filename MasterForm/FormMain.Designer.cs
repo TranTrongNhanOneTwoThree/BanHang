@@ -34,14 +34,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox_Logo = new System.Windows.Forms.PictureBox();
             this.panelButton = new System.Windows.Forms.Panel();
-            this.btn_CaiDat = new FontAwesome.Sharp.IconButton();
             this.btn_DangXuat = new FontAwesome.Sharp.IconButton();
             this.btn_QuanLy = new FontAwesome.Sharp.IconButton();
             this.btn_ThongKe = new FontAwesome.Sharp.IconButton();
             this.btn_NhapHang = new FontAwesome.Sharp.IconButton();
             this.btn_KhachHang = new FontAwesome.Sharp.IconButton();
             this.btn_SanPham = new FontAwesome.Sharp.IconButton();
-            this.btn_DonHang = new FontAwesome.Sharp.IconButton();
+            this.btn_HoaDon = new FontAwesome.Sharp.IconButton();
             this.btn_TrangChu = new FontAwesome.Sharp.IconButton();
             this.panelShow = new System.Windows.Forms.Panel();
             this.panelLabel.SuspendLayout();
@@ -113,14 +112,13 @@
             // panelButton
             // 
             this.panelButton.BackColor = System.Drawing.Color.White;
-            this.panelButton.Controls.Add(this.btn_CaiDat);
             this.panelButton.Controls.Add(this.btn_DangXuat);
             this.panelButton.Controls.Add(this.btn_QuanLy);
             this.panelButton.Controls.Add(this.btn_ThongKe);
             this.panelButton.Controls.Add(this.btn_NhapHang);
             this.panelButton.Controls.Add(this.btn_KhachHang);
             this.panelButton.Controls.Add(this.btn_SanPham);
-            this.panelButton.Controls.Add(this.btn_DonHang);
+            this.panelButton.Controls.Add(this.btn_HoaDon);
             this.panelButton.Controls.Add(this.btn_TrangChu);
             this.panelButton.Controls.Add(this.pictureBox_Logo);
             this.panelButton.Dock = System.Windows.Forms.DockStyle.Left;
@@ -129,28 +127,6 @@
             this.panelButton.Name = "panelButton";
             this.panelButton.Size = new System.Drawing.Size(195, 741);
             this.panelButton.TabIndex = 2;
-            // 
-            // btn_CaiDat
-            // 
-            this.btn_CaiDat.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_CaiDat.FlatAppearance.BorderSize = 0;
-            this.btn_CaiDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CaiDat.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CaiDat.ForeColor = System.Drawing.Color.White;
-            this.btn_CaiDat.IconChar = FontAwesome.Sharp.IconChar.UserCog;
-            this.btn_CaiDat.IconColor = System.Drawing.Color.Black;
-            this.btn_CaiDat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_CaiDat.IconSize = 44;
-            this.btn_CaiDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_CaiDat.Location = new System.Drawing.Point(0, 555);
-            this.btn_CaiDat.Name = "btn_CaiDat";
-            this.btn_CaiDat.Size = new System.Drawing.Size(195, 57);
-            this.btn_CaiDat.TabIndex = 18;
-            this.btn_CaiDat.Text = "CÀI ĐẶT";
-            this.btn_CaiDat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_CaiDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_CaiDat.UseVisualStyleBackColor = false;
-            this.btn_CaiDat.Click += new System.EventHandler(this.btn_CaiDat_Click);
             // 
             // btn_DangXuat
             // 
@@ -283,27 +259,27 @@
             this.btn_SanPham.UseVisualStyleBackColor = false;
             this.btn_SanPham.Click += new System.EventHandler(this.btn_SanPham_Click);
             // 
-            // btn_DonHang
+            // btn_HoaDon
             // 
-            this.btn_DonHang.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_DonHang.FlatAppearance.BorderSize = 0;
-            this.btn_DonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DonHang.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DonHang.ForeColor = System.Drawing.Color.White;
-            this.btn_DonHang.IconChar = FontAwesome.Sharp.IconChar.ShoppingBag;
-            this.btn_DonHang.IconColor = System.Drawing.Color.Black;
-            this.btn_DonHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_DonHang.IconSize = 44;
-            this.btn_DonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_DonHang.Location = new System.Drawing.Point(0, 239);
-            this.btn_DonHang.Name = "btn_DonHang";
-            this.btn_DonHang.Size = new System.Drawing.Size(195, 57);
-            this.btn_DonHang.TabIndex = 11;
-            this.btn_DonHang.Text = "ĐƠN HÀNG";
-            this.btn_DonHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_DonHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_DonHang.UseVisualStyleBackColor = false;
-            this.btn_DonHang.Click += new System.EventHandler(this.btn_DonHang_Click);
+            this.btn_HoaDon.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_HoaDon.FlatAppearance.BorderSize = 0;
+            this.btn_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_HoaDon.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_HoaDon.ForeColor = System.Drawing.Color.White;
+            this.btn_HoaDon.IconChar = FontAwesome.Sharp.IconChar.ShoppingBag;
+            this.btn_HoaDon.IconColor = System.Drawing.Color.Black;
+            this.btn_HoaDon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_HoaDon.IconSize = 44;
+            this.btn_HoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_HoaDon.Location = new System.Drawing.Point(0, 239);
+            this.btn_HoaDon.Name = "btn_HoaDon";
+            this.btn_HoaDon.Size = new System.Drawing.Size(195, 57);
+            this.btn_HoaDon.TabIndex = 11;
+            this.btn_HoaDon.Text = "HÓA ĐƠN";
+            this.btn_HoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_HoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_HoaDon.UseVisualStyleBackColor = false;
+            this.btn_HoaDon.Click += new System.EventHandler(this.btn_DonHang_Click);
             // 
             // btn_TrangChu
             // 
@@ -366,14 +342,13 @@
         private System.Windows.Forms.Panel panelButton;
         private System.Windows.Forms.Panel panelShow;
         private FontAwesome.Sharp.IconButton btn_TrangChu;
-        private FontAwesome.Sharp.IconButton btn_CaiDat;
         private FontAwesome.Sharp.IconButton btn_DangXuat;
         private FontAwesome.Sharp.IconButton btn_QuanLy;
         private FontAwesome.Sharp.IconButton btn_ThongKe;
         private FontAwesome.Sharp.IconButton btn_NhapHang;
         private FontAwesome.Sharp.IconButton btn_KhachHang;
         private FontAwesome.Sharp.IconButton btn_SanPham;
-        private FontAwesome.Sharp.IconButton btn_DonHang;
+        private FontAwesome.Sharp.IconButton btn_HoaDon;
         private FontAwesome.Sharp.IconButton btn_Minimize;
         private FontAwesome.Sharp.IconButton btn_Exit;
     }

@@ -32,19 +32,19 @@ namespace MasterForm
 
         private void textBox_SoLuong_Leave(object sender, EventArgs e)
         {
-            if (textBox_SoLuong.Text == "")
+            if (txt_SoLuong.Text == "")
             {
-                textBox_SoLuong.Text = "Thêm Số Lượng";
-                textBox_SoLuong.ForeColor = Color.Gray;
+                txt_SoLuong.Text = "Thêm Số Lượng";
+                txt_SoLuong.ForeColor = Color.Gray;
             }
         }
 
         private void textBox_SoLuong_Enter(object sender, EventArgs e)
         {
-            if (textBox_SoLuong.Text == "Thêm Số Lượng")
+            if (txt_SoLuong.Text == "Thêm Số Lượng")
             {
-                textBox_SoLuong.Text = "";
-                textBox_SoLuong.ForeColor = Color.Black;
+                txt_SoLuong.Text = "";
+                txt_SoLuong.ForeColor = Color.Black;
             }
         }
 
