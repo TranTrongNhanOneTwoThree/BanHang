@@ -2,3 +2,7 @@ MasterForm/App.config
 .vs/
 packages/
 MasterForm.sln
+MasterForm/MasterForm.csproj
+MasterForm/bin/
+MasterForm/obj/
+MasterForm/Properties/
