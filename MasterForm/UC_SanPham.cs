@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -14,6 +15,8 @@ namespace MasterForm
 {
     public partial class UC_SanPham : UserControl
     {
+         private string nameHost = ConfigurationManager.AppSettings.Get("nameHost");
+        private string userNamePss = ConfigurationManager.AppSettings.Get("userName");
         List<SanPham> SanPhams = new List<SanPham>();
  
         List<string> DanhMucs = new List<string>();
@@ -23,8 +26,8 @@ namespace MasterForm
         {
             String connectionstring;
             SqlConnection cnn;
-            connectionstring = @"Data Source = LAPTOP-AAL40GA9\SQLEXPRESS ;Initial Catalog=BanHang;
-            User ID=sa; Password=demo123";
+            connectionstring = @"Data Source = " + nameHost + " ;Initial Catalog=BanHang;"
+            + userNamePss + ";";
             cnn = new SqlConnection(connectionstring);
             cnn.Open();
             SqlCommand command;
