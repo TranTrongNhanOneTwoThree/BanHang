@@ -36,7 +36,6 @@
             this.panelButton = new System.Windows.Forms.Panel();
             this.btn_DangXuat = new FontAwesome.Sharp.IconButton();
             this.btn_QuanLy = new FontAwesome.Sharp.IconButton();
-            this.btn_ThongKe = new FontAwesome.Sharp.IconButton();
             this.btn_NhapHang = new FontAwesome.Sharp.IconButton();
             this.btn_KhachHang = new FontAwesome.Sharp.IconButton();
             this.btn_SanPham = new FontAwesome.Sharp.IconButton();
@@ -114,7 +113,6 @@
             this.panelButton.BackColor = System.Drawing.Color.White;
             this.panelButton.Controls.Add(this.btn_DangXuat);
             this.panelButton.Controls.Add(this.btn_QuanLy);
-            this.panelButton.Controls.Add(this.btn_ThongKe);
             this.panelButton.Controls.Add(this.btn_NhapHang);
             this.panelButton.Controls.Add(this.btn_KhachHang);
             this.panelButton.Controls.Add(this.btn_SanPham);
@@ -161,7 +159,7 @@
             this.btn_QuanLy.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_QuanLy.IconSize = 44;
             this.btn_QuanLy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_QuanLy.Location = new System.Drawing.Point(0, 502);
+            this.btn_QuanLy.Location = new System.Drawing.Point(0, 450);
             this.btn_QuanLy.Name = "btn_QuanLy";
             this.btn_QuanLy.Size = new System.Drawing.Size(195, 57);
             this.btn_QuanLy.TabIndex = 16;
@@ -170,28 +168,6 @@
             this.btn_QuanLy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_QuanLy.UseVisualStyleBackColor = false;
             this.btn_QuanLy.Click += new System.EventHandler(this.btn_QuanLy_Click);
-            // 
-            // btn_ThongKe
-            // 
-            this.btn_ThongKe.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_ThongKe.FlatAppearance.BorderSize = 0;
-            this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ThongKe.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThongKe.ForeColor = System.Drawing.Color.White;
-            this.btn_ThongKe.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
-            this.btn_ThongKe.IconColor = System.Drawing.Color.Black;
-            this.btn_ThongKe.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_ThongKe.IconSize = 44;
-            this.btn_ThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ThongKe.Location = new System.Drawing.Point(0, 449);
-            this.btn_ThongKe.Name = "btn_ThongKe";
-            this.btn_ThongKe.Size = new System.Drawing.Size(195, 57);
-            this.btn_ThongKe.TabIndex = 15;
-            this.btn_ThongKe.Text = "THỐNG KÊ";
-            this.btn_ThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_ThongKe.UseVisualStyleBackColor = false;
-            this.btn_ThongKe.Click += new System.EventHandler(this.btn_ThongKe_Click);
             // 
             // btn_NhapHang
             // 
@@ -344,7 +320,6 @@
         private FontAwesome.Sharp.IconButton btn_TrangChu;
         private FontAwesome.Sharp.IconButton btn_DangXuat;
         private FontAwesome.Sharp.IconButton btn_QuanLy;
-        private FontAwesome.Sharp.IconButton btn_ThongKe;
         private FontAwesome.Sharp.IconButton btn_NhapHang;
         private FontAwesome.Sharp.IconButton btn_KhachHang;
         private FontAwesome.Sharp.IconButton btn_SanPham;

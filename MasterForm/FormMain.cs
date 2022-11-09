@@ -112,13 +112,6 @@ namespace MasterForm
             ActivateButton(sender, RGBColors.color);
         }
 
-        private void btn_ThongKe_Click(object sender, EventArgs e)
-        {
-            panelShow.Controls.Clear();
-            panelShow.Controls.Add(new UC_ThongKe());
-            ActivateButton(sender, RGBColors.color);
-        }
-
         private void btn_QuanLy_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
