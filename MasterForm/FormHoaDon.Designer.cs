@@ -30,6 +30,7 @@
         {
             this.label_HoaDon = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.label_ThanhTien = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_Exit = new FontAwesome.Sharp.IconButton();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -90,6 +90,14 @@
             this.panel1.Size = new System.Drawing.Size(420, 445);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(408, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1, 443);
+            this.panel3.TabIndex = 11;
             // 
             // dateTimePicker1
             // 
@@ -147,6 +155,7 @@
             this.comboBox_MaKH.Name = "comboBox_MaKH";
             this.comboBox_MaKH.Size = new System.Drawing.Size(333, 36);
             this.comboBox_MaKH.TabIndex = 0;
+            this.comboBox_MaKH.SelectedIndexChanged += new System.EventHandler(this.comboBox_MaKH_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -280,6 +289,7 @@
             this.comboBox_TenSP.Name = "comboBox_TenSP";
             this.comboBox_TenSP.Size = new System.Drawing.Size(351, 36);
             this.comboBox_TenSP.TabIndex = 0;
+            this.comboBox_TenSP.SelectedIndexChanged += new System.EventHandler(this.comboBox_TenSP_SelectedIndexChanged);
             // 
             // button_ThanhToan
             // 
@@ -364,14 +374,6 @@
             this.btn_Exit.TabIndex = 7;
             this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(408, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1, 443);
-            this.panel3.TabIndex = 11;
             // 
             // FormHoaDon
             // 

@@ -11,7 +11,8 @@ namespace MasterForm
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Data;
+
     public partial class SanPham
     {
      //   [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -28,14 +29,21 @@ namespace MasterForm
         public string DonViTinh { get; set; }
         public Nullable<int> MaDM { get; set; }
 
-        public Nullable<int> SoLuong { get; set; }    
-    
-      //  [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-       // public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
-       // [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-       // public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }
-       // [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-       // public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons1 { get; set; }
+        public Nullable<int> SoLuong { get; set; }
+        public SanPham(DataRow row)
+        {
+            this.Masp = (int)row["Masp"];
+            this.Tensp = row["Tensp"].ToString();
+            this.DonViTinh = row["DonViTinh"].ToString();
+            this.MaDM = (int)row["MaDM"];
+        }
+
+        //  [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        // public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
+        // [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        // public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }
+        // [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        // public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons1 { get; set; }
         //public virtual DanhMucHang DanhMucHang { get; set; }
     }
 }

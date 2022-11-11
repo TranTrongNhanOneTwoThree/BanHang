@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MasterForm",
+    "\\MasterForm\\DAO",
+    "\\MasterForm\\DTO"
   ],
+  "SelectedNode": "\\MasterForm.sln",
   "PreviewInSolutionExplorer": false
 }

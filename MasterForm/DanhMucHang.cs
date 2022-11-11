@@ -11,7 +11,8 @@ namespace MasterForm
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Data;
+
     public partial class DanhMucHang
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,11 +20,20 @@ namespace MasterForm
         {
             this.SanPhams = new HashSet<SanPham>();
         }
-    
+
+        public DanhMucHang(DataRow item)
+        {
+            Item = item;
+            /*this.MaDm = (int)item["MaDm"];
+            this.TenDm = item["TenDm"].ToString();*/
+        }
+
         public int MaDm { get; set; }
         public string TenDm { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SanPham> SanPhams { get; set; }
+        public DataRow Item { get; }
+        public int ID { get; internal set; }
     }
 }

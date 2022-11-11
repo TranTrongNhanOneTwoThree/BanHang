@@ -1,14 +1,8 @@
-﻿using System;
+﻿using MasterForm.DAO;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MasterForm
 {
@@ -19,7 +13,25 @@ namespace MasterForm
             InitializeComponent();
         }
 
+        void loadKhachHang()
+        {
+            List<KhachHang> listKhachHang = KhachHangDAO.Instance.GetlistKhachHang();
 
+            comboBox_MaKH.DataSource = listKhachHang;
+            comboBox_MaKH.DisplayMember = "HoTen";
+        }
+        void loadSanPham(int id)
+        {
+            List<SanPham> listSanPhan= SanPhamDAO.Instance.GetSanPham(id);
+            comboBox_TenSP.DataSource = listSanPhan;
+            comboBox_TenSP.DisplayMember = "Tensp";
+        }
+        void loadDanhMuc()
+        {
+            List<DanhMucHang> listDanhMuc = DanhMucHangDAO.Instance.GetlistDanhMucHang();
+            comboBox_LoaiHang.DataSource = listDanhMuc;
+            comboBox_LoaiHang.DisplayMember = "TenDm";
+        }
         private void textBox_DonGia_Leave(object sender, EventArgs e)
         {
 
@@ -56,6 +68,23 @@ namespace MasterForm
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void comboBox_MaKH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadKhachHang();
+        }
+
+        private void comboBox_TenSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int id = 0;
+            ComboBox cb= sender as ComboBox;
+            if (cb.SelectedItem == null) return;
+            DanhMucHang selected = cb.SelectedItem as DanhMucHang;
+            id = selected.MaDm;
+            loadSanPham(id);
+
+        
         }
     }
 }

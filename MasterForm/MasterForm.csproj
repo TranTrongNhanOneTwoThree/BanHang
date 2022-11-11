@@ -74,9 +74,16 @@
     <Compile Include="DanhMucHang.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DanhMucHangDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\KhachHangDAO.cs" />
+    <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DonHang.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
+    <Compile Include="DTO\DanhMucHang.cs" />
+    <Compile Include="DTO\KhachHang.cs" />
+    <Compile Include="DTO\SanPham.cs" />
     <Compile Include="HoaDon.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
@@ -353,6 +360,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

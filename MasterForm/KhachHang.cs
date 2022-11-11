@@ -11,7 +11,8 @@ namespace MasterForm
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Data;
+
     public partial class KhachHang
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,7 +20,12 @@ namespace MasterForm
         {
             this.HoaDons = new HashSet<HoaDon>();
         }
-    
+
+        public KhachHang(DataRow item)
+        {
+            Item = item;
+        }
+
         public int MaKh { get; set; }
         public string HoTen { get; set; }
         public string DiaChi { get; set; }
@@ -27,5 +33,6 @@ namespace MasterForm
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDon> HoaDons { get; set; }
+        public DataRow Item { get; }
     }
 }
