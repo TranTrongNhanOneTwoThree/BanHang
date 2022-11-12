@@ -81,9 +81,9 @@
     <Compile Include="DonHang.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\DanhMucHang.cs" />
-    <Compile Include="DTO\KhachHang.cs" />
-    <Compile Include="DTO\SanPham.cs" />
+    <Compile Include="DTO\DanhMucHangDTO.cs" />
+    <Compile Include="DTO\KhachHangDTO.cs" />
+    <Compile Include="DTO\SanPhamDTO.cs" />
     <Compile Include="HoaDon.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>

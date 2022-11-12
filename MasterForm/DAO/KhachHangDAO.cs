@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MasterForm.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -19,15 +20,15 @@ namespace MasterForm.DAO
         {
 
         }
-        public List<KhachHang> GetlistKhachHang()
+        public List<KhachHangDTO> GetlistKhachHang()
         {
-            List<KhachHang> list = new List<KhachHang>();
+            List<KhachHangDTO> list = new List<KhachHangDTO>();
             string query = "select *from KhachHang";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)
             {
-                KhachHang khachkhang = new KhachHang(item);
+                KhachHangDTO khachkhang = new KhachHangDTO(item);
                 list.Add(khachkhang);
             }
             

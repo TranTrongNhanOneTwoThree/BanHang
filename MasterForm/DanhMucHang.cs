@@ -13,7 +13,7 @@ namespace MasterForm
     using System.Collections.Generic;
     using System.Data;
 
-    public partial class DanhMucHang
+    public  class DanhMucHang
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DanhMucHang()

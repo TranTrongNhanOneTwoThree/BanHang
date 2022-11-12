@@ -1,4 +1,5 @@
 ﻿using MasterForm.DAO;
+using MasterForm.DTO;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -15,20 +16,20 @@ namespace MasterForm
 
         void loadKhachHang()
         {
-            List<KhachHang> listKhachHang = KhachHangDAO.Instance.GetlistKhachHang();
+            List<KhachHangDTO> listKhachHang = KhachHangDAO.Instance.GetlistKhachHang();
 
             comboBox_MaKH.DataSource = listKhachHang;
             comboBox_MaKH.DisplayMember = "HoTen";
         }
         void loadSanPham(int id)
         {
-            List<SanPham> listSanPhan= SanPhamDAO.Instance.GetSanPham(id);
+            List<SanPhamDTO> listSanPhan= SanPhamDAO.Instance.GetSanPham(id);
             comboBox_TenSP.DataSource = listSanPhan;
             comboBox_TenSP.DisplayMember = "Tensp";
         }
         void loadDanhMuc()
         {
-            List<DanhMucHang> listDanhMuc = DanhMucHangDAO.Instance.GetlistDanhMucHang();
+            List<DanhMucHangDTO> listDanhMuc = DanhMucHangDAO.Instance.GetlistDanhMucHang();
             comboBox_LoaiHang.DataSource = listDanhMuc;
             comboBox_LoaiHang.DisplayMember = "TenDm";
         }
@@ -80,8 +81,8 @@ namespace MasterForm
             int id = 0;
             ComboBox cb= sender as ComboBox;
             if (cb.SelectedItem == null) return;
-            DanhMucHang selected = cb.SelectedItem as DanhMucHang;
-            id = selected.MaDm;
+            DanhMucHangDTO selected = cb.SelectedItem as DanhMucHangDTO;
+            id = selected.ID;
             loadSanPham(id);
 
         

@@ -27,12 +27,12 @@ namespace MasterForm.DTO
             this.ID = id;
             this.Name = name;
         }
-        DanhMucHangDTODanhMucHang(DataRow row)
+        public DanhMucHangDTO() { }
+
+       public DanhMucHangDTO(DataRow row)
         {
-            this.ID = (int)row["id"];
-            this.Name = row["name"].ToString();
+            this.ID = (int)row["MaDm"];
+            this.Name = row["TenDm"].ToString();
         }
     }
-
-}
 }

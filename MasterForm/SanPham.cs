@@ -13,7 +13,7 @@ namespace MasterForm
     using System.Collections.Generic;
     using System.Data;
 
-    public partial class SanPham
+    public class SanPham
     {
      //   [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SanPham()

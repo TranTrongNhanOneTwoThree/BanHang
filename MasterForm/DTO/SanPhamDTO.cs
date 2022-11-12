@@ -4,7 +4,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Media.Effects;
 
 namespace MasterForm.DTO
 {
@@ -22,12 +21,12 @@ namespace MasterForm.DTO
         }
         public int Id
         {
-            get { return id; }  
+            get { return id; }
             set { id = value; }
         }
         public string DonViTinh
         {
-            get { return donViTinh; }   
+            get { return donViTinh; }
             set { donViTinh = value; }
 
         }
@@ -42,14 +41,15 @@ namespace MasterForm.DTO
             this.Id = id;
             this.DonViTinh = donViTinh;
             this.IDdm = iddm;
-            
+
         }
+        public SanPhamDTO() { }
         public SanPhamDTO(DataRow row)
         {
-            this.Id=(int)row["id"];
-            this.Name = row["name"].ToString();
-            this.DonViTinh = row["donViTinh"].ToString();
-            this.IDdm = (int)row["iddm"];
+            this.Id = (int)row["Masp"];
+            this.Name = row["Tensp"].ToString();
+            this.DonViTinh = row["DonViTinh"].ToString();
+            this.IDdm = (int)row["MaDM"];
         }
     }
 }
