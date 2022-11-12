@@ -14,16 +14,15 @@ namespace MasterForm
     
     public partial class DanhMucHang
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+       
         public DanhMucHang()
         {
-            this.SanPhams = new HashSet<SanPham>();
+           
         }
     
         public int MaDm { get; set; }
         public string TenDm { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SanPham> SanPhams { get; set; }
+      
     }
 }

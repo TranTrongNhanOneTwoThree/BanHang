@@ -26,7 +26,7 @@ namespace MasterForm
         public string Tensp { get; set; }
         public Nullable<decimal> Gia { get; set; }
         public string DonViTinh { get; set; }
-        public Nullable<int> MaDM { get; set; }
+        public string TenDM { get; set; }
 
         public Nullable<int> SoLuong { get; set; }    
     
